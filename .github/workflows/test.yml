@@ -1,0 +1,47 @@
+name: Unit tests + coverage
+
+env:
+  MUMBAI_NODE_URL: https://rpc-mumbai.maticvigil.com
+  MAINNET_NODE_URL: https://polygon-rpc.com
+
+on:
+  push:
+    branches:
+      - master
+      - release-*
+  pull_request: { }
+  workflow_dispatch: { }
+
+jobs:
+
+  coverage:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: 2
+      - uses: actions/setup-node@v2
+        with:
+          node-version: 14.x
+      - uses: actions/cache@v2
+        id: cache
+        with:
+          path: '**/node_modules'
+          key: npm-v2-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: npm-v2-
+      - run: npm ci
+        if: steps.cache.outputs.cache-hit != 'true'
+      - run: npx hardhat compile
+        env:
+          NODE_OPTIONS: --max_old_space_size=4096
+          TESTNET_RPC_URL: http://foo.bar
+          MAINNET_RPC_URL: http://foo.bar
+          ETHERSCAN_API_KEY: something
+          PRIVATE_KEY: da55e4a36f0f879a7de89af80495410cdeba31043d37fc70d42c3419210a5c71
+      - run: npm run coverage
+        env:
+          NODE_OPTIONS: --max_old_space_size=4096
+          TESTNET_RPC_URL: http://foo.bar
+          MAINNET_RPC_URL: http://foo.bar
+          ETHERSCAN_API_KEY: something
+          PRIVATE_KEY: da55e4a36f0f879a7de89af80495410cdeba31043d37fc70d42c3419210a5c71

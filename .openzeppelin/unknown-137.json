@@ -1,0 +1,5948 @@
+{
+  "manifestVersion": "3.2",
+  "admin": {
+    "address": "0xF27522d4A48B9A5fE53F69E343B15926b540f0aB"
+  },
+  "proxies": [
+    {
+      "address": "0xc49be67aaa0a2476e5132ad77216521971643857",
+      "kind": "transparent"
+    },
+    {
+      "address": "0x62f594339830b90ae4c084ae7d223ffafd9658a7",
+      "kind": "transparent"
+    }
+  ],
+  "impls": {
+    "a7c2bd79b79aae28377ce601fb8d8eb7a5d5aa94069b437ca243d913153c55c7": {
+      "address": "0x92883E8aef7dB8228A55428132b867F8686cd883",
+      "layout": {
+        "storage": [
+          {
+            "label": "_initialized",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_uint8",
+            "contract": "Initializable",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:62",
+            "retypedFrom": "bool"
+          },
+          {
+            "label": "_initializing",
+            "offset": 1,
+            "slot": "0",
+            "type": "t_bool",
+            "contract": "Initializable",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:67"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_array(t_uint256)50_storage",
+            "contract": "ContextUpgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/utils/ContextUpgradeable.sol:36"
+          },
+          {
+            "label": "_owner",
+            "offset": 0,
+            "slot": "51",
+            "type": "t_address",
+            "contract": "OwnableUpgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol:22"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "52",
+            "type": "t_array(t_uint256)49_storage",
+            "contract": "OwnableUpgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol:87"
+          },
+          {
+            "label": "fees",
+            "offset": 0,
+            "slot": "101",
+            "type": "t_mapping(t_uint256,t_struct(Fees)8269_storage)",
+            "contract": "SphereSettings",
+            "src": "contracts/SphereSettings.sol:28"
+          }
+        ],
+        "types": {
+          "t_address": {
+            "label": "address",
+            "numberOfBytes": "20"
+          },
+          "t_array(t_uint256)49_storage": {
+            "label": "uint256[49]",
+            "numberOfBytes": "1568"
+          },
+          "t_array(t_uint256)50_storage": {
+            "label": "uint256[50]",
+            "numberOfBytes": "1600"
+          },
+          "t_bool": {
+            "label": "bool",
+            "numberOfBytes": "1"
+          },
+          "t_mapping(t_uint256,t_struct(Fees)8269_storage)": {
+            "label": "mapping(uint256 => struct ISphereSettings.Fees)",
+            "numberOfBytes": "32"
+          },
+          "t_struct(Fees)8269_storage": {
+            "label": "struct ISphereSettings.Fees",
+            "members": [
+              {
+                "label": "burnFee",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "buyGalaxyBondFee",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "1"
+              },
+              {
+                "label": "liquidityFee",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "2"
+              },
+              {
+                "label": "realFeePartyArray",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "3"
+              },
+              {
+                "label": "riskFreeValueFee",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "4"
+              },
+              {
+                "label": "sellBurnFee",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "5"
+              },
+              {
+                "label": "sellFeeRFVAdded",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "6"
+              },
+              {
+                "label": "sellFeeTreasuryAdded",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "7"
+              },
+              {
+                "label": "sellGalaxyBond",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "8"
+              },
+              {
+                "label": "treasuryFee",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "9"
+              },
+              {
+                "label": "totalBuyFee",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "10"
+              },
+              {
+                "label": "totalSellFee",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "11"
+              },
+              {
+                "label": "isTaxBracketEnabledInMoveFee",
+                "type": "t_bool",
+                "offset": 0,
+                "slot": "12"
+              }
+            ],
+            "numberOfBytes": "416"
+          },
+          "t_uint256": {
+            "label": "uint256",
+            "numberOfBytes": "32"
+          },
+          "t_uint8": {
+            "label": "uint8",
+            "numberOfBytes": "1"
+          }
+        }
+      }
+    },
+    "752a2d6bb1a13ba2fb4b742e370907847a97b27841339bd50ac731ed6a795940": {
+      "address": "0x82cf03485BD0CFEE315bE1e7A9c49F28106F271B",
+      "layout": {
+        "storage": [
+          {
+            "label": "_initialized",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_uint8",
+            "contract": "Initializable",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:62",
+            "retypedFrom": "bool"
+          },
+          {
+            "label": "_initializing",
+            "offset": 1,
+            "slot": "0",
+            "type": "t_bool",
+            "contract": "Initializable",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:67"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_array(t_uint256)50_storage",
+            "contract": "ContextUpgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/utils/ContextUpgradeable.sol:36"
+          },
+          {
+            "label": "_balances",
+            "offset": 0,
+            "slot": "51",
+            "type": "t_mapping(t_address,t_uint256)",
+            "contract": "ERC20Upgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/token/ERC20/ERC20Upgradeable.sol:37"
+          },
+          {
+            "label": "_allowances",
+            "offset": 0,
+            "slot": "52",
+            "type": "t_mapping(t_address,t_mapping(t_address,t_uint256))",
+            "contract": "ERC20Upgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/token/ERC20/ERC20Upgradeable.sol:39"
+          },
+          {
+            "label": "_totalSupply",
+            "offset": 0,
+            "slot": "53",
+            "type": "t_uint256",
+            "contract": "ERC20Upgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/token/ERC20/ERC20Upgradeable.sol:41"
+          },
+          {
+            "label": "_name",
+            "offset": 0,
+            "slot": "54",
+            "type": "t_string_storage",
+            "contract": "ERC20Upgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/token/ERC20/ERC20Upgradeable.sol:43"
+          },
+          {
+            "label": "_symbol",
+            "offset": 0,
+            "slot": "55",
+            "type": "t_string_storage",
+            "contract": "ERC20Upgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/token/ERC20/ERC20Upgradeable.sol:44"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "56",
+            "type": "t_array(t_uint256)45_storage",
+            "contract": "ERC20Upgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/token/ERC20/ERC20Upgradeable.sol:394"
+          },
+          {
+            "label": "_owner",
+            "offset": 0,
+            "slot": "101",
+            "type": "t_address",
+            "contract": "OwnableUpgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol:22"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "102",
+            "type": "t_array(t_uint256)49_storage",
+            "contract": "OwnableUpgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol:87"
+          },
+          {
+            "label": "settings",
+            "offset": 0,
+            "slot": "151",
+            "type": "t_contract(ISphereSettings)8281",
+            "contract": "SphereToken",
+            "src": "contracts/SphereToken.sol:40"
+          },
+          {
+            "label": "initialDistributionFinished",
+            "offset": 20,
+            "slot": "151",
+            "type": "t_bool",
+            "contract": "SphereToken",
+            "src": "contracts/SphereToken.sol:41"
+          },
+          {
+            "label": "inSwap",
+            "offset": 21,
+            "slot": "151",
+            "type": "t_bool",
+            "contract": "SphereToken",
+            "src": "contracts/SphereToken.sol:42"
+          },
+          {
+            "label": "_totalSupply",
+            "offset": 0,
+            "slot": "152",
+            "type": "t_uint256",
+            "contract": "SphereToken",
+            "src": "contracts/SphereToken.sol:43"
+          },
+          {
+            "label": "gonsPerFragment",
+            "offset": 0,
+            "slot": "153",
+            "type": "t_uint256",
+            "contract": "SphereToken",
+            "src": "contracts/SphereToken.sol:44"
+          },
+          {
+            "label": "makerPairs",
+            "offset": 0,
+            "slot": "154",
+            "type": "t_array(t_address)dyn_storage",
+            "contract": "SphereToken",
+            "src": "contracts/SphereToken.sol:51"
+          },
+          {
+            "label": "partyArray",
+            "offset": 0,
+            "slot": "155",
+            "type": "t_array(t_address)dyn_storage",
+            "contract": "SphereToken",
+            "src": "contracts/SphereToken.sol:52"
+          },
+          {
+            "label": "sphereGamesContracts",
+            "offset": 0,
+            "slot": "156",
+            "type": "t_array(t_address)dyn_storage",
+            "contract": "SphereToken",
+            "src": "contracts/SphereToken.sol:53"
+          },
+          {
+            "label": "subContracts",
+            "offset": 0,
+            "slot": "157",
+            "type": "t_array(t_address)dyn_storage",
+            "contract": "SphereToken",
+            "src": "contracts/SphereToken.sol:54"
+          },
+          {
+            "label": "lpContracts",
+            "offset": 0,
+            "slot": "158",
+            "type": "t_array(t_address)dyn_storage",
+            "contract": "SphereToken",
+            "src": "contracts/SphereToken.sol:55"
+          },
+          {
+            "label": "feesOnNormalTransfers",
+            "offset": 0,
+            "slot": "159",
+            "type": "t_bool",
+            "contract": "SphereToken",
+            "src": "contracts/SphereToken.sol:57"
+          },
+          {
+            "label": "autoRebase",
+            "offset": 1,
+            "slot": "159",
+            "type": "t_bool",
+            "contract": "SphereToken",
+            "src": "contracts/SphereToken.sol:59"
+          },
+          {
+            "label": "isLiquidityEnabled",
+            "offset": 2,
+            "slot": "159",
+            "type": "t_bool",
+            "contract": "SphereToken",
+            "src": "contracts/SphereToken.sol:62"
+          },
+          {
+            "label": "isMoveBalance",
+            "offset": 3,
+            "slot": "159",
+            "type": "t_bool",
+            "contract": "SphereToken",
+            "src": "contracts/SphereToken.sol:63"
+          },
+          {
+            "label": "isSellHourlyLimit",
+            "offset": 4,
+            "slot": "159",
+            "type": "t_bool",
+            "contract": "SphereToken",
+            "src": "contracts/SphereToken.sol:64"
+          },
+          {
+            "label": "isTaxBracket",
+            "offset": 5,
+            "slot": "159",
+            "type": "t_bool",
+            "contract": "SphereToken",
+            "src": "contracts/SphereToken.sol:65"
+          },
+          {
+            "label": "isWall",
+            "offset": 6,
+            "slot": "159",
+            "type": "t_bool",
+            "contract": "SphereToken",
+            "src": "contracts/SphereToken.sol:66"
+          },
+          {
+            "label": "partyTime",
+            "offset": 7,
+            "slot": "159",
+            "type": "t_bool",
+            "contract": "SphereToken",
+            "src": "contracts/SphereToken.sol:67"
+          },
+          {
+            "label": "swapEnabled",
+            "offset": 8,
+            "slot": "159",
+            "type": "t_bool",
+            "contract": "SphereToken",
+            "src": "contracts/SphereToken.sol:68"
+          },
+          {
+            "label": "goDeflationary",
+            "offset": 9,
+            "slot": "159",
+            "type": "t_bool",
+            "contract": "SphereToken",
+            "src": "contracts/SphereToken.sol:69"
+          },
+          {
+            "label": "investorInfoMap",
+            "offset": 0,
+            "slot": "160",
+            "type": "t_mapping(t_address,t_struct(InvestorInfo)8304_storage)",
+            "contract": "SphereToken",
+            "src": "contracts/SphereToken.sol:71"
+          },
+          {
+            "label": "isBuyFeeExempt",
+            "offset": 0,
+            "slot": "161",
+            "type": "t_mapping(t_address,t_bool)",
+            "contract": "SphereToken",
+            "src": "contracts/SphereToken.sol:72"
+          },
+          {
+            "label": "isSellFeeExempt",
+            "offset": 0,
+            "slot": "162",
+            "type": "t_mapping(t_address,t_bool)",
+            "contract": "SphereToken",
+            "src": "contracts/SphereToken.sol:73"
+          },
+          {
+            "label": "isTotalFeeExempt",
+            "offset": 0,
+            "slot": "163",
+            "type": "t_mapping(t_address,t_bool)",
+            "contract": "SphereToken",
+            "src": "contracts/SphereToken.sol:74"
+          },
+          {
+            "label": "canRebase",
+            "offset": 0,
+            "slot": "164",
+            "type": "t_mapping(t_address,t_bool)",
+            "contract": "SphereToken",
+            "src": "contracts/SphereToken.sol:75"
+          },
+          {
+            "label": "canSetRewardYield",
+            "offset": 0,
+            "slot": "165",
+            "type": "t_mapping(t_address,t_bool)",
+            "contract": "SphereToken",
+            "src": "contracts/SphereToken.sol:76"
+          },
+          {
+            "label": "_disallowedToMove",
+            "offset": 0,
+            "slot": "166",
+            "type": "t_mapping(t_address,t_bool)",
+            "contract": "SphereToken",
+            "src": "contracts/SphereToken.sol:77"
+          },
+          {
+            "label": "automatedMarketMakerPairs",
+            "offset": 0,
+            "slot": "167",
+            "type": "t_mapping(t_address,t_bool)",
+            "contract": "SphereToken",
+            "src": "contracts/SphereToken.sol:78"
+          },
+          {
+            "label": "partyArrayCheck",
+            "offset": 0,
+            "slot": "168",
+            "type": "t_mapping(t_address,t_bool)",
+            "contract": "SphereToken",
+            "src": "contracts/SphereToken.sol:79"
+          },
+          {
+            "label": "sphereGamesCheck",
+            "offset": 0,
+            "slot": "169",
+            "type": "t_mapping(t_address,t_bool)",
+            "contract": "SphereToken",
+            "src": "contracts/SphereToken.sol:80"
+          },
+          {
+            "label": "subContractCheck",
+            "offset": 0,
+            "slot": "170",
+            "type": "t_mapping(t_address,t_bool)",
+            "contract": "SphereToken",
+            "src": "contracts/SphereToken.sol:81"
+          },
+          {
+            "label": "lpContractCheck",
+            "offset": 0,
+            "slot": "171",
+            "type": "t_mapping(t_address,t_bool)",
+            "contract": "SphereToken",
+            "src": "contracts/SphereToken.sol:82"
+          },
+          {
+            "label": "partyArrayFee",
+            "offset": 0,
+            "slot": "172",
+            "type": "t_mapping(t_address,t_uint256)",
+            "contract": "SphereToken",
+            "src": "contracts/SphereToken.sol:83"
+          },
+          {
+            "label": "_allowedFragments",
+            "offset": 0,
+            "slot": "173",
+            "type": "t_mapping(t_address,t_mapping(t_address,t_uint256))",
+            "contract": "SphereToken",
+            "src": "contracts/SphereToken.sol:84"
+          },
+          {
+            "label": "_gonBalances",
+            "offset": 0,
+            "slot": "174",
+            "type": "t_mapping(t_address,t_uint256)",
+            "contract": "SphereToken",
+            "src": "contracts/SphereToken.sol:85"
+          },
+          {
+            "label": "rewardYieldDenominator",
+            "offset": 0,
+            "slot": "175",
+            "type": "t_uint256",
+            "contract": "SphereToken",
+            "src": "contracts/SphereToken.sol:87"
+          },
+          {
+            "label": "investRemovalDelay",
+            "offset": 0,
+            "slot": "176",
+            "type": "t_uint256",
+            "contract": "SphereToken",
+            "src": "contracts/SphereToken.sol:89"
+          },
+          {
+            "label": "partyListDivisor",
+            "offset": 0,
+            "slot": "177",
+            "type": "t_uint256",
+            "contract": "SphereToken",
+            "src": "contracts/SphereToken.sol:90"
+          },
+          {
+            "label": "rebaseFrequency",
+            "offset": 0,
+            "slot": "178",
+            "type": "t_uint256",
+            "contract": "SphereToken",
+            "src": "contracts/SphereToken.sol:91"
+          },
+          {
+            "label": "rewardYield",
+            "offset": 0,
+            "slot": "179",
+            "type": "t_uint256",
+            "contract": "SphereToken",
+            "src": "contracts/SphereToken.sol:92"
+          },
+          {
+            "label": "markerPairCount",
+            "offset": 0,
+            "slot": "180",
+            "type": "t_uint256",
+            "contract": "SphereToken",
+            "src": "contracts/SphereToken.sol:94"
+          },
+          {
+            "label": "index",
+            "offset": 0,
+            "slot": "181",
+            "type": "t_uint256",
+            "contract": "SphereToken",
+            "src": "contracts/SphereToken.sol:95"
+          },
+          {
+            "label": "maxBuyTransactionAmount",
+            "offset": 0,
+            "slot": "182",
+            "type": "t_uint256",
+            "contract": "SphereToken",
+            "src": "contracts/SphereToken.sol:96"
+          },
+          {
+            "label": "maxSellTransactionAmount",
+            "offset": 0,
+            "slot": "183",
+            "type": "t_uint256",
+            "contract": "SphereToken",
+            "src": "contracts/SphereToken.sol:97"
+          },
+          {
+            "label": "nextRebase",
+            "offset": 0,
+            "slot": "184",
+            "type": "t_uint256",
+            "contract": "SphereToken",
+            "src": "contracts/SphereToken.sol:98"
+          },
+          {
+            "label": "rebaseEpoch",
+            "offset": 0,
+            "slot": "185",
+            "type": "t_uint256",
+            "contract": "SphereToken",
+            "src": "contracts/SphereToken.sol:99"
+          },
+          {
+            "label": "taxBracketMultiplier",
+            "offset": 0,
+            "slot": "186",
+            "type": "t_uint256",
+            "contract": "SphereToken",
+            "src": "contracts/SphereToken.sol:100"
+          },
+          {
+            "label": "wallDivisor",
+            "offset": 0,
+            "slot": "187",
+            "type": "t_uint256",
+            "contract": "SphereToken",
+            "src": "contracts/SphereToken.sol:101"
+          },
+          {
+            "label": "liquidityReceiver",
+            "offset": 0,
+            "slot": "188",
+            "type": "t_address",
+            "contract": "SphereToken",
+            "src": "contracts/SphereToken.sol:103"
+          },
+          {
+            "label": "treasuryReceiver",
+            "offset": 0,
+            "slot": "189",
+            "type": "t_address",
+            "contract": "SphereToken",
+            "src": "contracts/SphereToken.sol:104"
+          },
+          {
+            "label": "riskFreeValueReceiver",
+            "offset": 0,
+            "slot": "190",
+            "type": "t_address",
+            "contract": "SphereToken",
+            "src": "contracts/SphereToken.sol:105"
+          },
+          {
+            "label": "galaxyBondReceiver",
+            "offset": 0,
+            "slot": "191",
+            "type": "t_address",
+            "contract": "SphereToken",
+            "src": "contracts/SphereToken.sol:106"
+          },
+          {
+            "label": "sphereSwapper",
+            "offset": 0,
+            "slot": "192",
+            "type": "t_address",
+            "contract": "SphereToken",
+            "src": "contracts/SphereToken.sol:108"
+          },
+          {
+            "label": "maxInvestRemovablePerPeriod",
+            "offset": 0,
+            "slot": "193",
+            "type": "t_uint256",
+            "contract": "SphereToken",
+            "src": "contracts/SphereToken.sol:110"
+          }
+        ],
+        "types": {
+          "t_address": {
+            "label": "address",
+            "numberOfBytes": "20"
+          },
+          "t_array(t_address)dyn_storage": {
+            "label": "address[]",
+            "numberOfBytes": "32"
+          },
+          "t_array(t_struct(GameDeposit)8293_storage)dyn_storage": {
+            "label": "struct ISphereToken.GameDeposit[]",
+            "numberOfBytes": "32"
+          },
+          "t_array(t_struct(Withdrawal)8288_storage)dyn_storage": {
+            "label": "struct ISphereToken.Withdrawal[]",
+            "numberOfBytes": "32"
+          },
+          "t_array(t_uint256)45_storage": {
+            "label": "uint256[45]",
+            "numberOfBytes": "1440"
+          },
+          "t_array(t_uint256)49_storage": {
+            "label": "uint256[49]",
+            "numberOfBytes": "1568"
+          },
+          "t_array(t_uint256)50_storage": {
+            "label": "uint256[50]",
+            "numberOfBytes": "1600"
+          },
+          "t_bool": {
+            "label": "bool",
+            "numberOfBytes": "1"
+          },
+          "t_contract(ISphereSettings)8281": {
+            "label": "contract ISphereSettings",
+            "numberOfBytes": "20"
+          },
+          "t_mapping(t_address,t_bool)": {
+            "label": "mapping(address => bool)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_address,t_mapping(t_address,t_uint256))": {
+            "label": "mapping(address => mapping(address => uint256))",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_address,t_struct(InvestorInfo)8304_storage)": {
+            "label": "mapping(address => struct ISphereToken.InvestorInfo)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_address,t_uint256)": {
+            "label": "mapping(address => uint256)",
+            "numberOfBytes": "32"
+          },
+          "t_string_storage": {
+            "label": "string",
+            "numberOfBytes": "32"
+          },
+          "t_struct(GameDeposit)8293_storage": {
+            "label": "struct ISphereToken.GameDeposit",
+            "members": [
+              {
+                "label": "timestamp",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "depositAmount",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "1"
+              }
+            ],
+            "numberOfBytes": "64"
+          },
+          "t_struct(InvestorInfo)8304_storage": {
+            "label": "struct ISphereToken.InvestorInfo",
+            "members": [
+              {
+                "label": "totalInvestableExchanged",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "withdrawHistory",
+                "type": "t_array(t_struct(Withdrawal)8288_storage)dyn_storage",
+                "offset": 0,
+                "slot": "1"
+              },
+              {
+                "label": "gameDepositHistory",
+                "type": "t_array(t_struct(GameDeposit)8293_storage)dyn_storage",
+                "offset": 0,
+                "slot": "2"
+              }
+            ],
+            "numberOfBytes": "96"
+          },
+          "t_struct(Withdrawal)8288_storage": {
+            "label": "struct ISphereToken.Withdrawal",
+            "members": [
+              {
+                "label": "timestamp",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "withdrawAmount",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "1"
+              }
+            ],
+            "numberOfBytes": "64"
+          },
+          "t_uint256": {
+            "label": "uint256",
+            "numberOfBytes": "32"
+          },
+          "t_uint8": {
+            "label": "uint8",
+            "numberOfBytes": "1"
+          }
+        }
+      }
+    },
+    "d15769d79851119f2fa652f0100505b0c8b95c3688891028a6609620d408f5c0": {
+      "address": "0x3926AcbF805b1d2c28B7ED4c29aC2455baB37f87",
+      "txHash": "0xd6027ea8dcc1f8f7be7638116f5ddd4072c9a4f0741bc5ccab18c5a8b52be938",
+      "layout": {
+        "storage": [
+          {
+            "label": "_initialized",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_uint8",
+            "contract": "Initializable",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:62",
+            "retypedFrom": "bool"
+          },
+          {
+            "label": "_initializing",
+            "offset": 1,
+            "slot": "0",
+            "type": "t_bool",
+            "contract": "Initializable",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:67"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_array(t_uint256)50_storage",
+            "contract": "ContextUpgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/utils/ContextUpgradeable.sol:36"
+          },
+          {
+            "label": "_owner",
+            "offset": 0,
+            "slot": "51",
+            "type": "t_address",
+            "contract": "OwnableUpgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol:22"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "52",
+            "type": "t_array(t_uint256)49_storage",
+            "contract": "OwnableUpgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol:87"
+          },
+          {
+            "label": "fees",
+            "offset": 0,
+            "slot": "101",
+            "type": "t_mapping(t_uint256,t_struct(Fees)8652_storage)",
+            "contract": "SphereSettings",
+            "src": "contracts/SphereSettings.sol:28"
+          }
+        ],
+        "types": {
+          "t_address": {
+            "label": "address",
+            "numberOfBytes": "20"
+          },
+          "t_array(t_uint256)49_storage": {
+            "label": "uint256[49]",
+            "numberOfBytes": "1568"
+          },
+          "t_array(t_uint256)50_storage": {
+            "label": "uint256[50]",
+            "numberOfBytes": "1600"
+          },
+          "t_bool": {
+            "label": "bool",
+            "numberOfBytes": "1"
+          },
+          "t_mapping(t_uint256,t_struct(Fees)8652_storage)": {
+            "label": "mapping(uint256 => struct ISphereSettings.Fees)",
+            "numberOfBytes": "32"
+          },
+          "t_struct(Fees)8652_storage": {
+            "label": "struct ISphereSettings.Fees",
+            "members": [
+              {
+                "label": "burnFee",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "buyGalaxyBondFee",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "1"
+              },
+              {
+                "label": "liquidityFee",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "2"
+              },
+              {
+                "label": "realFeePartyArray",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "3"
+              },
+              {
+                "label": "riskFreeValueFee",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "4"
+              },
+              {
+                "label": "sellBurnFee",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "5"
+              },
+              {
+                "label": "sellFeeRFVAdded",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "6"
+              },
+              {
+                "label": "sellFeeTreasuryAdded",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "7"
+              },
+              {
+                "label": "sellGalaxyBond",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "8"
+              },
+              {
+                "label": "treasuryFee",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "9"
+              },
+              {
+                "label": "totalBuyFee",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "10"
+              },
+              {
+                "label": "totalSellFee",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "11"
+              },
+              {
+                "label": "isTaxBracketEnabledInMoveFee",
+                "type": "t_bool",
+                "offset": 0,
+                "slot": "12"
+              },
+              {
+                "label": "gameFees",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "13"
+              }
+            ],
+            "numberOfBytes": "448"
+          },
+          "t_uint256": {
+            "label": "uint256",
+            "numberOfBytes": "32"
+          },
+          "t_uint8": {
+            "label": "uint8",
+            "numberOfBytes": "1"
+          }
+        }
+      }
+    },
+    "8a20ff9f25a0f4d4f17190204b3f234d74fb79442b6146112ee8a0be6aa45418": {
+      "address": "0xd5b24EfeE33eF0FBab59b3E592A2FbA9442a2ecE",
+      "txHash": "0xe64a677602bc55d276727662a17d547866773cc77cb3449ddefc42dc0c500656",
+      "layout": {
+        "storage": [
+          {
+            "label": "_initialized",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_uint8",
+            "contract": "Initializable",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:62",
+            "retypedFrom": "bool"
+          },
+          {
+            "label": "_initializing",
+            "offset": 1,
+            "slot": "0",
+            "type": "t_bool",
+            "contract": "Initializable",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:67"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_array(t_uint256)50_storage",
+            "contract": "ContextUpgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/utils/ContextUpgradeable.sol:36"
+          },
+          {
+            "label": "_balances",
+            "offset": 0,
+            "slot": "51",
+            "type": "t_mapping(t_address,t_uint256)",
+            "contract": "ERC20Upgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/token/ERC20/ERC20Upgradeable.sol:37"
+          },
+          {
+            "label": "_allowances",
+            "offset": 0,
+            "slot": "52",
+            "type": "t_mapping(t_address,t_mapping(t_address,t_uint256))",
+            "contract": "ERC20Upgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/token/ERC20/ERC20Upgradeable.sol:39"
+          },
+          {
+            "label": "_totalSupply",
+            "offset": 0,
+            "slot": "53",
+            "type": "t_uint256",
+            "contract": "ERC20Upgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/token/ERC20/ERC20Upgradeable.sol:41"
+          },
+          {
+            "label": "_name",
+            "offset": 0,
+            "slot": "54",
+            "type": "t_string_storage",
+            "contract": "ERC20Upgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/token/ERC20/ERC20Upgradeable.sol:43"
+          },
+          {
+            "label": "_symbol",
+            "offset": 0,
+            "slot": "55",
+            "type": "t_string_storage",
+            "contract": "ERC20Upgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/token/ERC20/ERC20Upgradeable.sol:44"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "56",
+            "type": "t_array(t_uint256)45_storage",
+            "contract": "ERC20Upgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/token/ERC20/ERC20Upgradeable.sol:394"
+          },
+          {
+            "label": "_owner",
+            "offset": 0,
+            "slot": "101",
+            "type": "t_address",
+            "contract": "OwnableUpgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol:22"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "102",
+            "type": "t_array(t_uint256)49_storage",
+            "contract": "OwnableUpgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol:87"
+          },
+          {
+            "label": "settings",
+            "offset": 0,
+            "slot": "151",
+            "type": "t_contract(ISphereSettings)8664",
+            "contract": "SphereToken",
+            "src": "contracts/SphereToken.sol:40"
+          },
+          {
+            "label": "initialDistributionFinished",
+            "offset": 20,
+            "slot": "151",
+            "type": "t_bool",
+            "contract": "SphereToken",
+            "src": "contracts/SphereToken.sol:41"
+          },
+          {
+            "label": "inSwap",
+            "offset": 21,
+            "slot": "151",
+            "type": "t_bool",
+            "contract": "SphereToken",
+            "src": "contracts/SphereToken.sol:42"
+          },
+          {
+            "label": "_totalSupply",
+            "offset": 0,
+            "slot": "152",
+            "type": "t_uint256",
+            "contract": "SphereToken",
+            "src": "contracts/SphereToken.sol:43"
+          },
+          {
+            "label": "gonsPerFragment",
+            "offset": 0,
+            "slot": "153",
+            "type": "t_uint256",
+            "contract": "SphereToken",
+            "src": "contracts/SphereToken.sol:44"
+          },
+          {
+            "label": "makerPairs",
+            "offset": 0,
+            "slot": "154",
+            "type": "t_array(t_address)dyn_storage",
+            "contract": "SphereToken",
+            "src": "contracts/SphereToken.sol:51"
+          },
+          {
+            "label": "partyArray",
+            "offset": 0,
+            "slot": "155",
+            "type": "t_array(t_address)dyn_storage",
+            "contract": "SphereToken",
+            "src": "contracts/SphereToken.sol:52"
+          },
+          {
+            "label": "sphereGamesContracts",
+            "offset": 0,
+            "slot": "156",
+            "type": "t_array(t_address)dyn_storage",
+            "contract": "SphereToken",
+            "src": "contracts/SphereToken.sol:53"
+          },
+          {
+            "label": "subContracts",
+            "offset": 0,
+            "slot": "157",
+            "type": "t_array(t_address)dyn_storage",
+            "contract": "SphereToken",
+            "src": "contracts/SphereToken.sol:54"
+          },
+          {
+            "label": "lpContracts",
+            "offset": 0,
+            "slot": "158",
+            "type": "t_array(t_address)dyn_storage",
+            "contract": "SphereToken",
+            "src": "contracts/SphereToken.sol:55"
+          },
+          {
+            "label": "feesOnNormalTransfers",
+            "offset": 0,
+            "slot": "159",
+            "type": "t_bool",
+            "contract": "SphereToken",
+            "src": "contracts/SphereToken.sol:57"
+          },
+          {
+            "label": "autoRebase",
+            "offset": 1,
+            "slot": "159",
+            "type": "t_bool",
+            "contract": "SphereToken",
+            "src": "contracts/SphereToken.sol:59"
+          },
+          {
+            "label": "isLiquidityEnabled",
+            "offset": 2,
+            "slot": "159",
+            "type": "t_bool",
+            "contract": "SphereToken",
+            "src": "contracts/SphereToken.sol:62"
+          },
+          {
+            "label": "isMoveBalance",
+            "offset": 3,
+            "slot": "159",
+            "type": "t_bool",
+            "contract": "SphereToken",
+            "src": "contracts/SphereToken.sol:63"
+          },
+          {
+            "label": "isSellHourlyLimit",
+            "offset": 4,
+            "slot": "159",
+            "type": "t_bool",
+            "contract": "SphereToken",
+            "src": "contracts/SphereToken.sol:64"
+          },
+          {
+            "label": "isTaxBracket",
+            "offset": 5,
+            "slot": "159",
+            "type": "t_bool",
+            "contract": "SphereToken",
+            "src": "contracts/SphereToken.sol:65"
+          },
+          {
+            "label": "isWall",
+            "offset": 6,
+            "slot": "159",
+            "type": "t_bool",
+            "contract": "SphereToken",
+            "src": "contracts/SphereToken.sol:66"
+          },
+          {
+            "label": "partyTime",
+            "offset": 7,
+            "slot": "159",
+            "type": "t_bool",
+            "contract": "SphereToken",
+            "src": "contracts/SphereToken.sol:67"
+          },
+          {
+            "label": "swapEnabled",
+            "offset": 8,
+            "slot": "159",
+            "type": "t_bool",
+            "contract": "SphereToken",
+            "src": "contracts/SphereToken.sol:68"
+          },
+          {
+            "label": "goDeflationary",
+            "offset": 9,
+            "slot": "159",
+            "type": "t_bool",
+            "contract": "SphereToken",
+            "src": "contracts/SphereToken.sol:69"
+          },
+          {
+            "label": "investorInfoMap",
+            "offset": 0,
+            "slot": "160",
+            "type": "t_mapping(t_address,t_struct(InvestorInfo)8687_storage)",
+            "contract": "SphereToken",
+            "src": "contracts/SphereToken.sol:71"
+          },
+          {
+            "label": "isBuyFeeExempt",
+            "offset": 0,
+            "slot": "161",
+            "type": "t_mapping(t_address,t_bool)",
+            "contract": "SphereToken",
+            "src": "contracts/SphereToken.sol:72"
+          },
+          {
+            "label": "isSellFeeExempt",
+            "offset": 0,
+            "slot": "162",
+            "type": "t_mapping(t_address,t_bool)",
+            "contract": "SphereToken",
+            "src": "contracts/SphereToken.sol:73"
+          },
+          {
+            "label": "isTotalFeeExempt",
+            "offset": 0,
+            "slot": "163",
+            "type": "t_mapping(t_address,t_bool)",
+            "contract": "SphereToken",
+            "src": "contracts/SphereToken.sol:74"
+          },
+          {
+            "label": "canRebase",
+            "offset": 0,
+            "slot": "164",
+            "type": "t_mapping(t_address,t_bool)",
+            "contract": "SphereToken",
+            "src": "contracts/SphereToken.sol:75"
+          },
+          {
+            "label": "canSetRewardYield",
+            "offset": 0,
+            "slot": "165",
+            "type": "t_mapping(t_address,t_bool)",
+            "contract": "SphereToken",
+            "src": "contracts/SphereToken.sol:76"
+          },
+          {
+            "label": "_disallowedToMove",
+            "offset": 0,
+            "slot": "166",
+            "type": "t_mapping(t_address,t_bool)",
+            "contract": "SphereToken",
+            "src": "contracts/SphereToken.sol:77"
+          },
+          {
+            "label": "automatedMarketMakerPairs",
+            "offset": 0,
+            "slot": "167",
+            "type": "t_mapping(t_address,t_bool)",
+            "contract": "SphereToken",
+            "src": "contracts/SphereToken.sol:78"
+          },
+          {
+            "label": "partyArrayCheck",
+            "offset": 0,
+            "slot": "168",
+            "type": "t_mapping(t_address,t_bool)",
+            "contract": "SphereToken",
+            "src": "contracts/SphereToken.sol:79"
+          },
+          {
+            "label": "sphereGamesCheck",
+            "offset": 0,
+            "slot": "169",
+            "type": "t_mapping(t_address,t_bool)",
+            "contract": "SphereToken",
+            "src": "contracts/SphereToken.sol:80"
+          },
+          {
+            "label": "subContractCheck",
+            "offset": 0,
+            "slot": "170",
+            "type": "t_mapping(t_address,t_bool)",
+            "contract": "SphereToken",
+            "src": "contracts/SphereToken.sol:81"
+          },
+          {
+            "label": "lpContractCheck",
+            "offset": 0,
+            "slot": "171",
+            "type": "t_mapping(t_address,t_bool)",
+            "contract": "SphereToken",
+            "src": "contracts/SphereToken.sol:82"
+          },
+          {
+            "label": "partyArrayFee",
+            "offset": 0,
+            "slot": "172",
+            "type": "t_mapping(t_address,t_uint256)",
+            "contract": "SphereToken",
+            "src": "contracts/SphereToken.sol:83"
+          },
+          {
+            "label": "_allowedFragments",
+            "offset": 0,
+            "slot": "173",
+            "type": "t_mapping(t_address,t_mapping(t_address,t_uint256))",
+            "contract": "SphereToken",
+            "src": "contracts/SphereToken.sol:84"
+          },
+          {
+            "label": "_gonBalances",
+            "offset": 0,
+            "slot": "174",
+            "type": "t_mapping(t_address,t_uint256)",
+            "contract": "SphereToken",
+            "src": "contracts/SphereToken.sol:85"
+          },
+          {
+            "label": "rewardYieldDenominator",
+            "offset": 0,
+            "slot": "175",
+            "type": "t_uint256",
+            "contract": "SphereToken",
+            "src": "contracts/SphereToken.sol:87"
+          },
+          {
+            "label": "investRemovalDelay",
+            "offset": 0,
+            "slot": "176",
+            "type": "t_uint256",
+            "contract": "SphereToken",
+            "src": "contracts/SphereToken.sol:89"
+          },
+          {
+            "label": "partyListDivisor",
+            "offset": 0,
+            "slot": "177",
+            "type": "t_uint256",
+            "contract": "SphereToken",
+            "src": "contracts/SphereToken.sol:90"
+          },
+          {
+            "label": "rebaseFrequency",
+            "offset": 0,
+            "slot": "178",
+            "type": "t_uint256",
+            "contract": "SphereToken",
+            "src": "contracts/SphereToken.sol:91"
+          },
+          {
+            "label": "rewardYield",
+            "offset": 0,
+            "slot": "179",
+            "type": "t_uint256",
+            "contract": "SphereToken",
+            "src": "contracts/SphereToken.sol:92"
+          },
+          {
+            "label": "markerPairCount",
+            "offset": 0,
+            "slot": "180",
+            "type": "t_uint256",
+            "contract": "SphereToken",
+            "src": "contracts/SphereToken.sol:94"
+          },
+          {
+            "label": "index",
+            "offset": 0,
+            "slot": "181",
+            "type": "t_uint256",
+            "contract": "SphereToken",
+            "src": "contracts/SphereToken.sol:95"
+          },
+          {
+            "label": "maxBuyTransactionAmount",
+            "offset": 0,
+            "slot": "182",
+            "type": "t_uint256",
+            "contract": "SphereToken",
+            "src": "contracts/SphereToken.sol:96"
+          },
+          {
+            "label": "maxSellTransactionAmount",
+            "offset": 0,
+            "slot": "183",
+            "type": "t_uint256",
+            "contract": "SphereToken",
+            "src": "contracts/SphereToken.sol:97"
+          },
+          {
+            "label": "nextRebase",
+            "offset": 0,
+            "slot": "184",
+            "type": "t_uint256",
+            "contract": "SphereToken",
+            "src": "contracts/SphereToken.sol:98"
+          },
+          {
+            "label": "rebaseEpoch",
+            "offset": 0,
+            "slot": "185",
+            "type": "t_uint256",
+            "contract": "SphereToken",
+            "src": "contracts/SphereToken.sol:99"
+          },
+          {
+            "label": "taxBracketMultiplier",
+            "offset": 0,
+            "slot": "186",
+            "type": "t_uint256",
+            "contract": "SphereToken",
+            "src": "contracts/SphereToken.sol:100"
+          },
+          {
+            "label": "wallDivisor",
+            "offset": 0,
+            "slot": "187",
+            "type": "t_uint256",
+            "contract": "SphereToken",
+            "src": "contracts/SphereToken.sol:101"
+          },
+          {
+            "label": "liquidityReceiver",
+            "offset": 0,
+            "slot": "188",
+            "type": "t_address",
+            "contract": "SphereToken",
+            "src": "contracts/SphereToken.sol:103"
+          },
+          {
+            "label": "treasuryReceiver",
+            "offset": 0,
+            "slot": "189",
+            "type": "t_address",
+            "contract": "SphereToken",
+            "src": "contracts/SphereToken.sol:104"
+          },
+          {
+            "label": "riskFreeValueReceiver",
+            "offset": 0,
+            "slot": "190",
+            "type": "t_address",
+            "contract": "SphereToken",
+            "src": "contracts/SphereToken.sol:105"
+          },
+          {
+            "label": "galaxyBondReceiver",
+            "offset": 0,
+            "slot": "191",
+            "type": "t_address",
+            "contract": "SphereToken",
+            "src": "contracts/SphereToken.sol:106"
+          },
+          {
+            "label": "sphereSwapper",
+            "offset": 0,
+            "slot": "192",
+            "type": "t_address",
+            "contract": "SphereToken",
+            "src": "contracts/SphereToken.sol:108"
+          },
+          {
+            "label": "maxInvestRemovablePerPeriod",
+            "offset": 0,
+            "slot": "193",
+            "type": "t_uint256",
+            "contract": "SphereToken",
+            "src": "contracts/SphereToken.sol:110"
+          },
+          {
+            "label": "isGameDepositLimited",
+            "offset": 0,
+            "slot": "194",
+            "type": "t_bool",
+            "contract": "SphereToken",
+            "src": "contracts/SphereToken.sol:114"
+          },
+          {
+            "label": "gameDepositDelay",
+            "offset": 0,
+            "slot": "195",
+            "type": "t_uint256",
+            "contract": "SphereToken",
+            "src": "contracts/SphereToken.sol:115"
+          },
+          {
+            "label": "gameDepositMaxShare",
+            "offset": 0,
+            "slot": "196",
+            "type": "t_uint256",
+            "contract": "SphereToken",
+            "src": "contracts/SphereToken.sol:116"
+          },
+          {
+            "label": "sphereGamePool",
+            "offset": 0,
+            "slot": "197",
+            "type": "t_address",
+            "contract": "SphereToken",
+            "src": "contracts/SphereToken.sol:117"
+          }
+        ],
+        "types": {
+          "t_address": {
+            "label": "address",
+            "numberOfBytes": "20"
+          },
+          "t_array(t_address)dyn_storage": {
+            "label": "address[]",
+            "numberOfBytes": "32"
+          },
+          "t_array(t_struct(GameDeposit)8676_storage)dyn_storage": {
+            "label": "struct ISphereToken.GameDeposit[]",
+            "numberOfBytes": "32"
+          },
+          "t_array(t_struct(Withdrawal)8671_storage)dyn_storage": {
+            "label": "struct ISphereToken.Withdrawal[]",
+            "numberOfBytes": "32"
+          },
+          "t_array(t_uint256)45_storage": {
+            "label": "uint256[45]",
+            "numberOfBytes": "1440"
+          },
+          "t_array(t_uint256)49_storage": {
+            "label": "uint256[49]",
+            "numberOfBytes": "1568"
+          },
+          "t_array(t_uint256)50_storage": {
+            "label": "uint256[50]",
+            "numberOfBytes": "1600"
+          },
+          "t_bool": {
+            "label": "bool",
+            "numberOfBytes": "1"
+          },
+          "t_contract(ISphereSettings)8664": {
+            "label": "contract ISphereSettings",
+            "numberOfBytes": "20"
+          },
+          "t_mapping(t_address,t_bool)": {
+            "label": "mapping(address => bool)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_address,t_mapping(t_address,t_uint256))": {
+            "label": "mapping(address => mapping(address => uint256))",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_address,t_struct(InvestorInfo)8687_storage)": {
+            "label": "mapping(address => struct ISphereToken.InvestorInfo)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_address,t_uint256)": {
+            "label": "mapping(address => uint256)",
+            "numberOfBytes": "32"
+          },
+          "t_string_storage": {
+            "label": "string",
+            "numberOfBytes": "32"
+          },
+          "t_struct(GameDeposit)8676_storage": {
+            "label": "struct ISphereToken.GameDeposit",
+            "members": [
+              {
+                "label": "timestamp",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "depositAmount",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "1"
+              }
+            ],
+            "numberOfBytes": "64"
+          },
+          "t_struct(InvestorInfo)8687_storage": {
+            "label": "struct ISphereToken.InvestorInfo",
+            "members": [
+              {
+                "label": "totalInvestableExchanged",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "withdrawHistory",
+                "type": "t_array(t_struct(Withdrawal)8671_storage)dyn_storage",
+                "offset": 0,
+                "slot": "1"
+              },
+              {
+                "label": "gameDepositHistory",
+                "type": "t_array(t_struct(GameDeposit)8676_storage)dyn_storage",
+                "offset": 0,
+                "slot": "2"
+              }
+            ],
+            "numberOfBytes": "96"
+          },
+          "t_struct(Withdrawal)8671_storage": {
+            "label": "struct ISphereToken.Withdrawal",
+            "members": [
+              {
+                "label": "timestamp",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "withdrawAmount",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "1"
+              }
+            ],
+            "numberOfBytes": "64"
+          },
+          "t_uint256": {
+            "label": "uint256",
+            "numberOfBytes": "32"
+          },
+          "t_uint8": {
+            "label": "uint8",
+            "numberOfBytes": "1"
+          }
+        }
+      }
+    },
+    "1efda8783f161263bf628a5e792bbf5f93079da8f7896cf73af74db41ecb2b7f": {
+      "address": "0x2e555a9f3c7E0403562d58722Ec4Bd4A29F6fB34",
+      "txHash": "0x107ee0f398b5c772f3ec938b4442790eb24219e066b6c1dff3355057001b87b6",
+      "layout": {
+        "storage": [
+          {
+            "label": "_initialized",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_uint8",
+            "contract": "Initializable",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:62",
+            "retypedFrom": "bool"
+          },
+          {
+            "label": "_initializing",
+            "offset": 1,
+            "slot": "0",
+            "type": "t_bool",
+            "contract": "Initializable",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:67"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_array(t_uint256)50_storage",
+            "contract": "ContextUpgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/utils/ContextUpgradeable.sol:36"
+          },
+          {
+            "label": "_balances",
+            "offset": 0,
+            "slot": "51",
+            "type": "t_mapping(t_address,t_uint256)",
+            "contract": "ERC20Upgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/token/ERC20/ERC20Upgradeable.sol:37"
+          },
+          {
+            "label": "_allowances",
+            "offset": 0,
+            "slot": "52",
+            "type": "t_mapping(t_address,t_mapping(t_address,t_uint256))",
+            "contract": "ERC20Upgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/token/ERC20/ERC20Upgradeable.sol:39"
+          },
+          {
+            "label": "_totalSupply",
+            "offset": 0,
+            "slot": "53",
+            "type": "t_uint256",
+            "contract": "ERC20Upgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/token/ERC20/ERC20Upgradeable.sol:41"
+          },
+          {
+            "label": "_name",
+            "offset": 0,
+            "slot": "54",
+            "type": "t_string_storage",
+            "contract": "ERC20Upgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/token/ERC20/ERC20Upgradeable.sol:43"
+          },
+          {
+            "label": "_symbol",
+            "offset": 0,
+            "slot": "55",
+            "type": "t_string_storage",
+            "contract": "ERC20Upgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/token/ERC20/ERC20Upgradeable.sol:44"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "56",
+            "type": "t_array(t_uint256)45_storage",
+            "contract": "ERC20Upgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/token/ERC20/ERC20Upgradeable.sol:394"
+          },
+          {
+            "label": "_owner",
+            "offset": 0,
+            "slot": "101",
+            "type": "t_address",
+            "contract": "OwnableUpgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol:22"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "102",
+            "type": "t_array(t_uint256)49_storage",
+            "contract": "OwnableUpgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol:87"
+          },
+          {
+            "label": "settings",
+            "offset": 0,
+            "slot": "151",
+            "type": "t_contract(ISphereSettings)8976",
+            "contract": "SphereToken",
+            "src": "contracts/SphereToken.sol:40"
+          },
+          {
+            "label": "initialDistributionFinished",
+            "offset": 20,
+            "slot": "151",
+            "type": "t_bool",
+            "contract": "SphereToken",
+            "src": "contracts/SphereToken.sol:41"
+          },
+          {
+            "label": "inSwap",
+            "offset": 21,
+            "slot": "151",
+            "type": "t_bool",
+            "contract": "SphereToken",
+            "src": "contracts/SphereToken.sol:42"
+          },
+          {
+            "label": "_totalSupply",
+            "offset": 0,
+            "slot": "152",
+            "type": "t_uint256",
+            "contract": "SphereToken",
+            "src": "contracts/SphereToken.sol:43"
+          },
+          {
+            "label": "gonsPerFragment",
+            "offset": 0,
+            "slot": "153",
+            "type": "t_uint256",
+            "contract": "SphereToken",
+            "src": "contracts/SphereToken.sol:44"
+          },
+          {
+            "label": "makerPairs",
+            "offset": 0,
+            "slot": "154",
+            "type": "t_array(t_address)dyn_storage",
+            "contract": "SphereToken",
+            "src": "contracts/SphereToken.sol:51"
+          },
+          {
+            "label": "partyArray",
+            "offset": 0,
+            "slot": "155",
+            "type": "t_array(t_address)dyn_storage",
+            "contract": "SphereToken",
+            "src": "contracts/SphereToken.sol:52"
+          },
+          {
+            "label": "sphereGamesContracts",
+            "offset": 0,
+            "slot": "156",
+            "type": "t_array(t_address)dyn_storage",
+            "contract": "SphereToken",
+            "src": "contracts/SphereToken.sol:53"
+          },
+          {
+            "label": "subContracts",
+            "offset": 0,
+            "slot": "157",
+            "type": "t_array(t_address)dyn_storage",
+            "contract": "SphereToken",
+            "src": "contracts/SphereToken.sol:54"
+          },
+          {
+            "label": "lpContracts",
+            "offset": 0,
+            "slot": "158",
+            "type": "t_array(t_address)dyn_storage",
+            "contract": "SphereToken",
+            "src": "contracts/SphereToken.sol:55"
+          },
+          {
+            "label": "feesOnNormalTransfers",
+            "offset": 0,
+            "slot": "159",
+            "type": "t_bool",
+            "contract": "SphereToken",
+            "src": "contracts/SphereToken.sol:57"
+          },
+          {
+            "label": "autoRebase",
+            "offset": 1,
+            "slot": "159",
+            "type": "t_bool",
+            "contract": "SphereToken",
+            "src": "contracts/SphereToken.sol:59"
+          },
+          {
+            "label": "isLiquidityEnabled",
+            "offset": 2,
+            "slot": "159",
+            "type": "t_bool",
+            "contract": "SphereToken",
+            "src": "contracts/SphereToken.sol:62"
+          },
+          {
+            "label": "isMoveBalance",
+            "offset": 3,
+            "slot": "159",
+            "type": "t_bool",
+            "contract": "SphereToken",
+            "src": "contracts/SphereToken.sol:63"
+          },
+          {
+            "label": "isSellHourlyLimit",
+            "offset": 4,
+            "slot": "159",
+            "type": "t_bool",
+            "contract": "SphereToken",
+            "src": "contracts/SphereToken.sol:64"
+          },
+          {
+            "label": "isTaxBracket",
+            "offset": 5,
+            "slot": "159",
+            "type": "t_bool",
+            "contract": "SphereToken",
+            "src": "contracts/SphereToken.sol:65"
+          },
+          {
+            "label": "isWall",
+            "offset": 6,
+            "slot": "159",
+            "type": "t_bool",
+            "contract": "SphereToken",
+            "src": "contracts/SphereToken.sol:66"
+          },
+          {
+            "label": "partyTime",
+            "offset": 7,
+            "slot": "159",
+            "type": "t_bool",
+            "contract": "SphereToken",
+            "src": "contracts/SphereToken.sol:67"
+          },
+          {
+            "label": "swapEnabled",
+            "offset": 8,
+            "slot": "159",
+            "type": "t_bool",
+            "contract": "SphereToken",
+            "src": "contracts/SphereToken.sol:68"
+          },
+          {
+            "label": "goDeflationary",
+            "offset": 9,
+            "slot": "159",
+            "type": "t_bool",
+            "contract": "SphereToken",
+            "src": "contracts/SphereToken.sol:69"
+          },
+          {
+            "label": "investorInfoMap",
+            "offset": 0,
+            "slot": "160",
+            "type": "t_mapping(t_address,t_struct(InvestorInfo)8999_storage)",
+            "contract": "SphereToken",
+            "src": "contracts/SphereToken.sol:71"
+          },
+          {
+            "label": "isBuyFeeExempt",
+            "offset": 0,
+            "slot": "161",
+            "type": "t_mapping(t_address,t_bool)",
+            "contract": "SphereToken",
+            "src": "contracts/SphereToken.sol:72"
+          },
+          {
+            "label": "isSellFeeExempt",
+            "offset": 0,
+            "slot": "162",
+            "type": "t_mapping(t_address,t_bool)",
+            "contract": "SphereToken",
+            "src": "contracts/SphereToken.sol:73"
+          },
+          {
+            "label": "isTotalFeeExempt",
+            "offset": 0,
+            "slot": "163",
+            "type": "t_mapping(t_address,t_bool)",
+            "contract": "SphereToken",
+            "src": "contracts/SphereToken.sol:74"
+          },
+          {
+            "label": "canRebase",
+            "offset": 0,
+            "slot": "164",
+            "type": "t_mapping(t_address,t_bool)",
+            "contract": "SphereToken",
+            "src": "contracts/SphereToken.sol:75"
+          },
+          {
+            "label": "canSetRewardYield",
+            "offset": 0,
+            "slot": "165",
+            "type": "t_mapping(t_address,t_bool)",
+            "contract": "SphereToken",
+            "src": "contracts/SphereToken.sol:76"
+          },
+          {
+            "label": "_disallowedToMove",
+            "offset": 0,
+            "slot": "166",
+            "type": "t_mapping(t_address,t_bool)",
+            "contract": "SphereToken",
+            "src": "contracts/SphereToken.sol:77"
+          },
+          {
+            "label": "automatedMarketMakerPairs",
+            "offset": 0,
+            "slot": "167",
+            "type": "t_mapping(t_address,t_bool)",
+            "contract": "SphereToken",
+            "src": "contracts/SphereToken.sol:78"
+          },
+          {
+            "label": "partyArrayCheck",
+            "offset": 0,
+            "slot": "168",
+            "type": "t_mapping(t_address,t_bool)",
+            "contract": "SphereToken",
+            "src": "contracts/SphereToken.sol:79"
+          },
+          {
+            "label": "sphereGamesCheck",
+            "offset": 0,
+            "slot": "169",
+            "type": "t_mapping(t_address,t_bool)",
+            "contract": "SphereToken",
+            "src": "contracts/SphereToken.sol:80"
+          },
+          {
+            "label": "subContractCheck",
+            "offset": 0,
+            "slot": "170",
+            "type": "t_mapping(t_address,t_bool)",
+            "contract": "SphereToken",
+            "src": "contracts/SphereToken.sol:81"
+          },
+          {
+            "label": "lpContractCheck",
+            "offset": 0,
+            "slot": "171",
+            "type": "t_mapping(t_address,t_bool)",
+            "contract": "SphereToken",
+            "src": "contracts/SphereToken.sol:82"
+          },
+          {
+            "label": "partyArrayFee",
+            "offset": 0,
+            "slot": "172",
+            "type": "t_mapping(t_address,t_uint256)",
+            "contract": "SphereToken",
+            "src": "contracts/SphereToken.sol:83"
+          },
+          {
+            "label": "_allowedFragments",
+            "offset": 0,
+            "slot": "173",
+            "type": "t_mapping(t_address,t_mapping(t_address,t_uint256))",
+            "contract": "SphereToken",
+            "src": "contracts/SphereToken.sol:84"
+          },
+          {
+            "label": "_gonBalances",
+            "offset": 0,
+            "slot": "174",
+            "type": "t_mapping(t_address,t_uint256)",
+            "contract": "SphereToken",
+            "src": "contracts/SphereToken.sol:85"
+          },
+          {
+            "label": "rewardYieldDenominator",
+            "offset": 0,
+            "slot": "175",
+            "type": "t_uint256",
+            "contract": "SphereToken",
+            "src": "contracts/SphereToken.sol:87"
+          },
+          {
+            "label": "investRemovalDelay",
+            "offset": 0,
+            "slot": "176",
+            "type": "t_uint256",
+            "contract": "SphereToken",
+            "src": "contracts/SphereToken.sol:89"
+          },
+          {
+            "label": "partyListDivisor",
+            "offset": 0,
+            "slot": "177",
+            "type": "t_uint256",
+            "contract": "SphereToken",
+            "src": "contracts/SphereToken.sol:90"
+          },
+          {
+            "label": "rebaseFrequency",
+            "offset": 0,
+            "slot": "178",
+            "type": "t_uint256",
+            "contract": "SphereToken",
+            "src": "contracts/SphereToken.sol:91"
+          },
+          {
+            "label": "rewardYield",
+            "offset": 0,
+            "slot": "179",
+            "type": "t_uint256",
+            "contract": "SphereToken",
+            "src": "contracts/SphereToken.sol:92"
+          },
+          {
+            "label": "markerPairCount",
+            "offset": 0,
+            "slot": "180",
+            "type": "t_uint256",
+            "contract": "SphereToken",
+            "src": "contracts/SphereToken.sol:94"
+          },
+          {
+            "label": "index",
+            "offset": 0,
+            "slot": "181",
+            "type": "t_uint256",
+            "contract": "SphereToken",
+            "src": "contracts/SphereToken.sol:95"
+          },
+          {
+            "label": "maxBuyTransactionAmount",
+            "offset": 0,
+            "slot": "182",
+            "type": "t_uint256",
+            "contract": "SphereToken",
+            "src": "contracts/SphereToken.sol:96"
+          },
+          {
+            "label": "maxSellTransactionAmount",
+            "offset": 0,
+            "slot": "183",
+            "type": "t_uint256",
+            "contract": "SphereToken",
+            "src": "contracts/SphereToken.sol:97"
+          },
+          {
+            "label": "nextRebase",
+            "offset": 0,
+            "slot": "184",
+            "type": "t_uint256",
+            "contract": "SphereToken",
+            "src": "contracts/SphereToken.sol:98"
+          },
+          {
+            "label": "rebaseEpoch",
+            "offset": 0,
+            "slot": "185",
+            "type": "t_uint256",
+            "contract": "SphereToken",
+            "src": "contracts/SphereToken.sol:99"
+          },
+          {
+            "label": "taxBracketMultiplier",
+            "offset": 0,
+            "slot": "186",
+            "type": "t_uint256",
+            "contract": "SphereToken",
+            "src": "contracts/SphereToken.sol:100"
+          },
+          {
+            "label": "wallDivisor",
+            "offset": 0,
+            "slot": "187",
+            "type": "t_uint256",
+            "contract": "SphereToken",
+            "src": "contracts/SphereToken.sol:101"
+          },
+          {
+            "label": "liquidityReceiver",
+            "offset": 0,
+            "slot": "188",
+            "type": "t_address",
+            "contract": "SphereToken",
+            "src": "contracts/SphereToken.sol:103"
+          },
+          {
+            "label": "treasuryReceiver",
+            "offset": 0,
+            "slot": "189",
+            "type": "t_address",
+            "contract": "SphereToken",
+            "src": "contracts/SphereToken.sol:104"
+          },
+          {
+            "label": "riskFreeValueReceiver",
+            "offset": 0,
+            "slot": "190",
+            "type": "t_address",
+            "contract": "SphereToken",
+            "src": "contracts/SphereToken.sol:105"
+          },
+          {
+            "label": "galaxyBondReceiver",
+            "offset": 0,
+            "slot": "191",
+            "type": "t_address",
+            "contract": "SphereToken",
+            "src": "contracts/SphereToken.sol:106"
+          },
+          {
+            "label": "sphereSwapper",
+            "offset": 0,
+            "slot": "192",
+            "type": "t_address",
+            "contract": "SphereToken",
+            "src": "contracts/SphereToken.sol:108"
+          },
+          {
+            "label": "maxInvestRemovablePerPeriod",
+            "offset": 0,
+            "slot": "193",
+            "type": "t_uint256",
+            "contract": "SphereToken",
+            "src": "contracts/SphereToken.sol:110"
+          },
+          {
+            "label": "isGameDepositLimited",
+            "offset": 0,
+            "slot": "194",
+            "type": "t_bool",
+            "contract": "SphereToken",
+            "src": "contracts/SphereToken.sol:114"
+          },
+          {
+            "label": "gameDepositDelay",
+            "offset": 0,
+            "slot": "195",
+            "type": "t_uint256",
+            "contract": "SphereToken",
+            "src": "contracts/SphereToken.sol:115"
+          },
+          {
+            "label": "gameDepositMaxShare",
+            "offset": 0,
+            "slot": "196",
+            "type": "t_uint256",
+            "contract": "SphereToken",
+            "src": "contracts/SphereToken.sol:116"
+          },
+          {
+            "label": "sphereGamePool",
+            "offset": 0,
+            "slot": "197",
+            "type": "t_address",
+            "contract": "SphereToken",
+            "src": "contracts/SphereToken.sol:117"
+          }
+        ],
+        "types": {
+          "t_address": {
+            "label": "address",
+            "numberOfBytes": "20"
+          },
+          "t_array(t_address)dyn_storage": {
+            "label": "address[]",
+            "numberOfBytes": "32"
+          },
+          "t_array(t_struct(GameDeposit)8988_storage)dyn_storage": {
+            "label": "struct ISphereToken.GameDeposit[]",
+            "numberOfBytes": "32"
+          },
+          "t_array(t_struct(Withdrawal)8983_storage)dyn_storage": {
+            "label": "struct ISphereToken.Withdrawal[]",
+            "numberOfBytes": "32"
+          },
+          "t_array(t_uint256)45_storage": {
+            "label": "uint256[45]",
+            "numberOfBytes": "1440"
+          },
+          "t_array(t_uint256)49_storage": {
+            "label": "uint256[49]",
+            "numberOfBytes": "1568"
+          },
+          "t_array(t_uint256)50_storage": {
+            "label": "uint256[50]",
+            "numberOfBytes": "1600"
+          },
+          "t_bool": {
+            "label": "bool",
+            "numberOfBytes": "1"
+          },
+          "t_contract(ISphereSettings)8976": {
+            "label": "contract ISphereSettings",
+            "numberOfBytes": "20"
+          },
+          "t_mapping(t_address,t_bool)": {
+            "label": "mapping(address => bool)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_address,t_mapping(t_address,t_uint256))": {
+            "label": "mapping(address => mapping(address => uint256))",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_address,t_struct(InvestorInfo)8999_storage)": {
+            "label": "mapping(address => struct ISphereToken.InvestorInfo)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_address,t_uint256)": {
+            "label": "mapping(address => uint256)",
+            "numberOfBytes": "32"
+          },
+          "t_string_storage": {
+            "label": "string",
+            "numberOfBytes": "32"
+          },
+          "t_struct(GameDeposit)8988_storage": {
+            "label": "struct ISphereToken.GameDeposit",
+            "members": [
+              {
+                "label": "timestamp",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "depositAmount",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "1"
+              }
+            ],
+            "numberOfBytes": "64"
+          },
+          "t_struct(InvestorInfo)8999_storage": {
+            "label": "struct ISphereToken.InvestorInfo",
+            "members": [
+              {
+                "label": "totalInvestableExchanged",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "withdrawHistory",
+                "type": "t_array(t_struct(Withdrawal)8983_storage)dyn_storage",
+                "offset": 0,
+                "slot": "1"
+              },
+              {
+                "label": "gameDepositHistory",
+                "type": "t_array(t_struct(GameDeposit)8988_storage)dyn_storage",
+                "offset": 0,
+                "slot": "2"
+              }
+            ],
+            "numberOfBytes": "96"
+          },
+          "t_struct(Withdrawal)8983_storage": {
+            "label": "struct ISphereToken.Withdrawal",
+            "members": [
+              {
+                "label": "timestamp",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "withdrawAmount",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "1"
+              }
+            ],
+            "numberOfBytes": "64"
+          },
+          "t_uint256": {
+            "label": "uint256",
+            "numberOfBytes": "32"
+          },
+          "t_uint8": {
+            "label": "uint8",
+            "numberOfBytes": "1"
+          }
+        }
+      }
+    },
+    "d29b83efe206a971f13478c414906c2b938ab79d9f67dad7a7ad819f57e3a059": {
+      "address": "0xD938279a20d5e956a349A9645E768e5728A1f772",
+      "txHash": "0x38d764aea37820340c5464cff3170025ecf996a3271386fcbf0551f5259b82fb",
+      "layout": {
+        "storage": [
+          {
+            "label": "_initialized",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_uint8",
+            "contract": "Initializable",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:62",
+            "retypedFrom": "bool"
+          },
+          {
+            "label": "_initializing",
+            "offset": 1,
+            "slot": "0",
+            "type": "t_bool",
+            "contract": "Initializable",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:67"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_array(t_uint256)50_storage",
+            "contract": "ContextUpgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/utils/ContextUpgradeable.sol:36"
+          },
+          {
+            "label": "_balances",
+            "offset": 0,
+            "slot": "51",
+            "type": "t_mapping(t_address,t_uint256)",
+            "contract": "ERC20Upgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/token/ERC20/ERC20Upgradeable.sol:37"
+          },
+          {
+            "label": "_allowances",
+            "offset": 0,
+            "slot": "52",
+            "type": "t_mapping(t_address,t_mapping(t_address,t_uint256))",
+            "contract": "ERC20Upgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/token/ERC20/ERC20Upgradeable.sol:39"
+          },
+          {
+            "label": "_totalSupply",
+            "offset": 0,
+            "slot": "53",
+            "type": "t_uint256",
+            "contract": "ERC20Upgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/token/ERC20/ERC20Upgradeable.sol:41"
+          },
+          {
+            "label": "_name",
+            "offset": 0,
+            "slot": "54",
+            "type": "t_string_storage",
+            "contract": "ERC20Upgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/token/ERC20/ERC20Upgradeable.sol:43"
+          },
+          {
+            "label": "_symbol",
+            "offset": 0,
+            "slot": "55",
+            "type": "t_string_storage",
+            "contract": "ERC20Upgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/token/ERC20/ERC20Upgradeable.sol:44"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "56",
+            "type": "t_array(t_uint256)45_storage",
+            "contract": "ERC20Upgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/token/ERC20/ERC20Upgradeable.sol:394"
+          },
+          {
+            "label": "_owner",
+            "offset": 0,
+            "slot": "101",
+            "type": "t_address",
+            "contract": "OwnableUpgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol:22"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "102",
+            "type": "t_array(t_uint256)49_storage",
+            "contract": "OwnableUpgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol:87"
+          },
+          {
+            "label": "settings",
+            "offset": 0,
+            "slot": "151",
+            "type": "t_contract(ISphereSettings)8796",
+            "contract": "SphereToken",
+            "src": "contracts/SphereToken.sol:40"
+          },
+          {
+            "label": "initialDistributionFinished",
+            "offset": 20,
+            "slot": "151",
+            "type": "t_bool",
+            "contract": "SphereToken",
+            "src": "contracts/SphereToken.sol:41"
+          },
+          {
+            "label": "inSwap",
+            "offset": 21,
+            "slot": "151",
+            "type": "t_bool",
+            "contract": "SphereToken",
+            "src": "contracts/SphereToken.sol:42"
+          },
+          {
+            "label": "_totalSupply",
+            "offset": 0,
+            "slot": "152",
+            "type": "t_uint256",
+            "contract": "SphereToken",
+            "src": "contracts/SphereToken.sol:43"
+          },
+          {
+            "label": "gonsPerFragment",
+            "offset": 0,
+            "slot": "153",
+            "type": "t_uint256",
+            "contract": "SphereToken",
+            "src": "contracts/SphereToken.sol:44"
+          },
+          {
+            "label": "makerPairs",
+            "offset": 0,
+            "slot": "154",
+            "type": "t_array(t_address)dyn_storage",
+            "contract": "SphereToken",
+            "src": "contracts/SphereToken.sol:51"
+          },
+          {
+            "label": "partyArray",
+            "offset": 0,
+            "slot": "155",
+            "type": "t_array(t_address)dyn_storage",
+            "contract": "SphereToken",
+            "src": "contracts/SphereToken.sol:52"
+          },
+          {
+            "label": "sphereGamesContracts",
+            "offset": 0,
+            "slot": "156",
+            "type": "t_array(t_address)dyn_storage",
+            "contract": "SphereToken",
+            "src": "contracts/SphereToken.sol:53"
+          },
+          {
+            "label": "subContracts",
+            "offset": 0,
+            "slot": "157",
+            "type": "t_array(t_address)dyn_storage",
+            "contract": "SphereToken",
+            "src": "contracts/SphereToken.sol:54"
+          },
+          {
+            "label": "lpContracts",
+            "offset": 0,
+            "slot": "158",
+            "type": "t_array(t_address)dyn_storage",
+            "contract": "SphereToken",
+            "src": "contracts/SphereToken.sol:55"
+          },
+          {
+            "label": "feesOnNormalTransfers",
+            "offset": 0,
+            "slot": "159",
+            "type": "t_bool",
+            "contract": "SphereToken",
+            "src": "contracts/SphereToken.sol:57"
+          },
+          {
+            "label": "autoRebase",
+            "offset": 1,
+            "slot": "159",
+            "type": "t_bool",
+            "contract": "SphereToken",
+            "src": "contracts/SphereToken.sol:59"
+          },
+          {
+            "label": "isLiquidityEnabled",
+            "offset": 2,
+            "slot": "159",
+            "type": "t_bool",
+            "contract": "SphereToken",
+            "src": "contracts/SphereToken.sol:62"
+          },
+          {
+            "label": "isMoveBalance",
+            "offset": 3,
+            "slot": "159",
+            "type": "t_bool",
+            "contract": "SphereToken",
+            "src": "contracts/SphereToken.sol:63"
+          },
+          {
+            "label": "isSellHourlyLimit",
+            "offset": 4,
+            "slot": "159",
+            "type": "t_bool",
+            "contract": "SphereToken",
+            "src": "contracts/SphereToken.sol:64"
+          },
+          {
+            "label": "isTaxBracket",
+            "offset": 5,
+            "slot": "159",
+            "type": "t_bool",
+            "contract": "SphereToken",
+            "src": "contracts/SphereToken.sol:65"
+          },
+          {
+            "label": "isWall",
+            "offset": 6,
+            "slot": "159",
+            "type": "t_bool",
+            "contract": "SphereToken",
+            "src": "contracts/SphereToken.sol:66"
+          },
+          {
+            "label": "partyTime",
+            "offset": 7,
+            "slot": "159",
+            "type": "t_bool",
+            "contract": "SphereToken",
+            "src": "contracts/SphereToken.sol:67"
+          },
+          {
+            "label": "swapEnabled",
+            "offset": 8,
+            "slot": "159",
+            "type": "t_bool",
+            "contract": "SphereToken",
+            "src": "contracts/SphereToken.sol:68"
+          },
+          {
+            "label": "goDeflationary",
+            "offset": 9,
+            "slot": "159",
+            "type": "t_bool",
+            "contract": "SphereToken",
+            "src": "contracts/SphereToken.sol:69"
+          },
+          {
+            "label": "investorInfoMap",
+            "offset": 0,
+            "slot": "160",
+            "type": "t_mapping(t_address,t_struct(InvestorInfo)8819_storage)",
+            "contract": "SphereToken",
+            "src": "contracts/SphereToken.sol:71"
+          },
+          {
+            "label": "isBuyFeeExempt",
+            "offset": 0,
+            "slot": "161",
+            "type": "t_mapping(t_address,t_bool)",
+            "contract": "SphereToken",
+            "src": "contracts/SphereToken.sol:72"
+          },
+          {
+            "label": "isSellFeeExempt",
+            "offset": 0,
+            "slot": "162",
+            "type": "t_mapping(t_address,t_bool)",
+            "contract": "SphereToken",
+            "src": "contracts/SphereToken.sol:73"
+          },
+          {
+            "label": "isTotalFeeExempt",
+            "offset": 0,
+            "slot": "163",
+            "type": "t_mapping(t_address,t_bool)",
+            "contract": "SphereToken",
+            "src": "contracts/SphereToken.sol:74"
+          },
+          {
+            "label": "canRebase",
+            "offset": 0,
+            "slot": "164",
+            "type": "t_mapping(t_address,t_bool)",
+            "contract": "SphereToken",
+            "src": "contracts/SphereToken.sol:75"
+          },
+          {
+            "label": "canSetRewardYield",
+            "offset": 0,
+            "slot": "165",
+            "type": "t_mapping(t_address,t_bool)",
+            "contract": "SphereToken",
+            "src": "contracts/SphereToken.sol:76"
+          },
+          {
+            "label": "_disallowedToMove",
+            "offset": 0,
+            "slot": "166",
+            "type": "t_mapping(t_address,t_bool)",
+            "contract": "SphereToken",
+            "src": "contracts/SphereToken.sol:77"
+          },
+          {
+            "label": "automatedMarketMakerPairs",
+            "offset": 0,
+            "slot": "167",
+            "type": "t_mapping(t_address,t_bool)",
+            "contract": "SphereToken",
+            "src": "contracts/SphereToken.sol:78"
+          },
+          {
+            "label": "partyArrayCheck",
+            "offset": 0,
+            "slot": "168",
+            "type": "t_mapping(t_address,t_bool)",
+            "contract": "SphereToken",
+            "src": "contracts/SphereToken.sol:79"
+          },
+          {
+            "label": "sphereGamesCheck",
+            "offset": 0,
+            "slot": "169",
+            "type": "t_mapping(t_address,t_bool)",
+            "contract": "SphereToken",
+            "src": "contracts/SphereToken.sol:80"
+          },
+          {
+            "label": "subContractCheck",
+            "offset": 0,
+            "slot": "170",
+            "type": "t_mapping(t_address,t_bool)",
+            "contract": "SphereToken",
+            "src": "contracts/SphereToken.sol:81"
+          },
+          {
+            "label": "lpContractCheck",
+            "offset": 0,
+            "slot": "171",
+            "type": "t_mapping(t_address,t_bool)",
+            "contract": "SphereToken",
+            "src": "contracts/SphereToken.sol:82"
+          },
+          {
+            "label": "partyArrayFee",
+            "offset": 0,
+            "slot": "172",
+            "type": "t_mapping(t_address,t_uint256)",
+            "contract": "SphereToken",
+            "src": "contracts/SphereToken.sol:83"
+          },
+          {
+            "label": "_allowedFragments",
+            "offset": 0,
+            "slot": "173",
+            "type": "t_mapping(t_address,t_mapping(t_address,t_uint256))",
+            "contract": "SphereToken",
+            "src": "contracts/SphereToken.sol:84"
+          },
+          {
+            "label": "_gonBalances",
+            "offset": 0,
+            "slot": "174",
+            "type": "t_mapping(t_address,t_uint256)",
+            "contract": "SphereToken",
+            "src": "contracts/SphereToken.sol:85"
+          },
+          {
+            "label": "rewardYieldDenominator",
+            "offset": 0,
+            "slot": "175",
+            "type": "t_uint256",
+            "contract": "SphereToken",
+            "src": "contracts/SphereToken.sol:87"
+          },
+          {
+            "label": "investRemovalDelay",
+            "offset": 0,
+            "slot": "176",
+            "type": "t_uint256",
+            "contract": "SphereToken",
+            "src": "contracts/SphereToken.sol:89"
+          },
+          {
+            "label": "partyListDivisor",
+            "offset": 0,
+            "slot": "177",
+            "type": "t_uint256",
+            "contract": "SphereToken",
+            "src": "contracts/SphereToken.sol:90"
+          },
+          {
+            "label": "rebaseFrequency",
+            "offset": 0,
+            "slot": "178",
+            "type": "t_uint256",
+            "contract": "SphereToken",
+            "src": "contracts/SphereToken.sol:91"
+          },
+          {
+            "label": "rewardYield",
+            "offset": 0,
+            "slot": "179",
+            "type": "t_uint256",
+            "contract": "SphereToken",
+            "src": "contracts/SphereToken.sol:92"
+          },
+          {
+            "label": "markerPairCount",
+            "offset": 0,
+            "slot": "180",
+            "type": "t_uint256",
+            "contract": "SphereToken",
+            "src": "contracts/SphereToken.sol:94"
+          },
+          {
+            "label": "index",
+            "offset": 0,
+            "slot": "181",
+            "type": "t_uint256",
+            "contract": "SphereToken",
+            "src": "contracts/SphereToken.sol:95"
+          },
+          {
+            "label": "maxBuyTransactionAmount",
+            "offset": 0,
+            "slot": "182",
+            "type": "t_uint256",
+            "contract": "SphereToken",
+            "src": "contracts/SphereToken.sol:96"
+          },
+          {
+            "label": "maxSellTransactionAmount",
+            "offset": 0,
+            "slot": "183",
+            "type": "t_uint256",
+            "contract": "SphereToken",
+            "src": "contracts/SphereToken.sol:97"
+          },
+          {
+            "label": "nextRebase",
+            "offset": 0,
+            "slot": "184",
+            "type": "t_uint256",
+            "contract": "SphereToken",
+            "src": "contracts/SphereToken.sol:98"
+          },
+          {
+            "label": "rebaseEpoch",
+            "offset": 0,
+            "slot": "185",
+            "type": "t_uint256",
+            "contract": "SphereToken",
+            "src": "contracts/SphereToken.sol:99"
+          },
+          {
+            "label": "taxBracketMultiplier",
+            "offset": 0,
+            "slot": "186",
+            "type": "t_uint256",
+            "contract": "SphereToken",
+            "src": "contracts/SphereToken.sol:100"
+          },
+          {
+            "label": "wallDivisor",
+            "offset": 0,
+            "slot": "187",
+            "type": "t_uint256",
+            "contract": "SphereToken",
+            "src": "contracts/SphereToken.sol:101"
+          },
+          {
+            "label": "liquidityReceiver",
+            "offset": 0,
+            "slot": "188",
+            "type": "t_address",
+            "contract": "SphereToken",
+            "src": "contracts/SphereToken.sol:103"
+          },
+          {
+            "label": "treasuryReceiver",
+            "offset": 0,
+            "slot": "189",
+            "type": "t_address",
+            "contract": "SphereToken",
+            "src": "contracts/SphereToken.sol:104"
+          },
+          {
+            "label": "riskFreeValueReceiver",
+            "offset": 0,
+            "slot": "190",
+            "type": "t_address",
+            "contract": "SphereToken",
+            "src": "contracts/SphereToken.sol:105"
+          },
+          {
+            "label": "galaxyBondReceiver",
+            "offset": 0,
+            "slot": "191",
+            "type": "t_address",
+            "contract": "SphereToken",
+            "src": "contracts/SphereToken.sol:106"
+          },
+          {
+            "label": "sphereSwapper",
+            "offset": 0,
+            "slot": "192",
+            "type": "t_address",
+            "contract": "SphereToken",
+            "src": "contracts/SphereToken.sol:108"
+          },
+          {
+            "label": "maxInvestRemovablePerPeriod",
+            "offset": 0,
+            "slot": "193",
+            "type": "t_uint256",
+            "contract": "SphereToken",
+            "src": "contracts/SphereToken.sol:110"
+          },
+          {
+            "label": "isGameDepositLimited",
+            "offset": 0,
+            "slot": "194",
+            "type": "t_bool",
+            "contract": "SphereToken",
+            "src": "contracts/SphereToken.sol:114"
+          },
+          {
+            "label": "gameDepositDelay",
+            "offset": 0,
+            "slot": "195",
+            "type": "t_uint256",
+            "contract": "SphereToken",
+            "src": "contracts/SphereToken.sol:115"
+          },
+          {
+            "label": "gameDepositMaxShare",
+            "offset": 0,
+            "slot": "196",
+            "type": "t_uint256",
+            "contract": "SphereToken",
+            "src": "contracts/SphereToken.sol:116"
+          },
+          {
+            "label": "sphereGamePool",
+            "offset": 0,
+            "slot": "197",
+            "type": "t_address",
+            "contract": "SphereToken",
+            "src": "contracts/SphereToken.sol:117"
+          },
+          {
+            "label": "hackerDeadLock",
+            "offset": 0,
+            "slot": "198",
+            "type": "t_mapping(t_address,t_bool)",
+            "contract": "SphereToken",
+            "src": "contracts/SphereToken.sol:123"
+          },
+          {
+            "label": "multisig",
+            "offset": 0,
+            "slot": "199",
+            "type": "t_address",
+            "contract": "SphereToken",
+            "src": "contracts/SphereToken.sol:124"
+          }
+        ],
+        "types": {
+          "t_address": {
+            "label": "address",
+            "numberOfBytes": "20"
+          },
+          "t_array(t_address)dyn_storage": {
+            "label": "address[]",
+            "numberOfBytes": "32"
+          },
+          "t_array(t_struct(GameDeposit)8808_storage)dyn_storage": {
+            "label": "struct ISphereToken.GameDeposit[]",
+            "numberOfBytes": "32"
+          },
+          "t_array(t_struct(Withdrawal)8803_storage)dyn_storage": {
+            "label": "struct ISphereToken.Withdrawal[]",
+            "numberOfBytes": "32"
+          },
+          "t_array(t_uint256)45_storage": {
+            "label": "uint256[45]",
+            "numberOfBytes": "1440"
+          },
+          "t_array(t_uint256)49_storage": {
+            "label": "uint256[49]",
+            "numberOfBytes": "1568"
+          },
+          "t_array(t_uint256)50_storage": {
+            "label": "uint256[50]",
+            "numberOfBytes": "1600"
+          },
+          "t_bool": {
+            "label": "bool",
+            "numberOfBytes": "1"
+          },
+          "t_contract(ISphereSettings)8796": {
+            "label": "contract ISphereSettings",
+            "numberOfBytes": "20"
+          },
+          "t_mapping(t_address,t_bool)": {
+            "label": "mapping(address => bool)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_address,t_mapping(t_address,t_uint256))": {
+            "label": "mapping(address => mapping(address => uint256))",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_address,t_struct(InvestorInfo)8819_storage)": {
+            "label": "mapping(address => struct ISphereToken.InvestorInfo)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_address,t_uint256)": {
+            "label": "mapping(address => uint256)",
+            "numberOfBytes": "32"
+          },
+          "t_string_storage": {
+            "label": "string",
+            "numberOfBytes": "32"
+          },
+          "t_struct(GameDeposit)8808_storage": {
+            "label": "struct ISphereToken.GameDeposit",
+            "members": [
+              {
+                "label": "timestamp",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "depositAmount",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "1"
+              }
+            ],
+            "numberOfBytes": "64"
+          },
+          "t_struct(InvestorInfo)8819_storage": {
+            "label": "struct ISphereToken.InvestorInfo",
+            "members": [
+              {
+                "label": "totalInvestableExchanged",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "withdrawHistory",
+                "type": "t_array(t_struct(Withdrawal)8803_storage)dyn_storage",
+                "offset": 0,
+                "slot": "1"
+              },
+              {
+                "label": "gameDepositHistory",
+                "type": "t_array(t_struct(GameDeposit)8808_storage)dyn_storage",
+                "offset": 0,
+                "slot": "2"
+              }
+            ],
+            "numberOfBytes": "96"
+          },
+          "t_struct(Withdrawal)8803_storage": {
+            "label": "struct ISphereToken.Withdrawal",
+            "members": [
+              {
+                "label": "timestamp",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "withdrawAmount",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "1"
+              }
+            ],
+            "numberOfBytes": "64"
+          },
+          "t_uint256": {
+            "label": "uint256",
+            "numberOfBytes": "32"
+          },
+          "t_uint8": {
+            "label": "uint8",
+            "numberOfBytes": "1"
+          }
+        }
+      }
+    },
+    "4877ad842e435cf62a6debd982dd12e5ef7ad8b804ce9d1f5a6efaaa5604db7f": {
+      "address": "0xF16E97D61a074D0b36C00E5a11729733c39e5b68",
+      "txHash": "0x0e4ccae622e78641d31d9a7ac422c1dbdbc9d3dae605dc3163847c71285f543e",
+      "layout": {
+        "storage": [
+          {
+            "label": "_initialized",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_uint8",
+            "contract": "Initializable",
+            "src": "@openzeppelin\\contracts-upgradeable\\proxy\\utils\\Initializable.sol:62",
+            "retypedFrom": "bool"
+          },
+          {
+            "label": "_initializing",
+            "offset": 1,
+            "slot": "0",
+            "type": "t_bool",
+            "contract": "Initializable",
+            "src": "@openzeppelin\\contracts-upgradeable\\proxy\\utils\\Initializable.sol:67"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_array(t_uint256)50_storage",
+            "contract": "ContextUpgradeable",
+            "src": "@openzeppelin\\contracts-upgradeable\\utils\\ContextUpgradeable.sol:36"
+          },
+          {
+            "label": "_balances",
+            "offset": 0,
+            "slot": "51",
+            "type": "t_mapping(t_address,t_uint256)",
+            "contract": "ERC20Upgradeable",
+            "src": "@openzeppelin\\contracts-upgradeable\\token\\ERC20\\ERC20Upgradeable.sol:37"
+          },
+          {
+            "label": "_allowances",
+            "offset": 0,
+            "slot": "52",
+            "type": "t_mapping(t_address,t_mapping(t_address,t_uint256))",
+            "contract": "ERC20Upgradeable",
+            "src": "@openzeppelin\\contracts-upgradeable\\token\\ERC20\\ERC20Upgradeable.sol:39"
+          },
+          {
+            "label": "_totalSupply",
+            "offset": 0,
+            "slot": "53",
+            "type": "t_uint256",
+            "contract": "ERC20Upgradeable",
+            "src": "@openzeppelin\\contracts-upgradeable\\token\\ERC20\\ERC20Upgradeable.sol:41"
+          },
+          {
+            "label": "_name",
+            "offset": 0,
+            "slot": "54",
+            "type": "t_string_storage",
+            "contract": "ERC20Upgradeable",
+            "src": "@openzeppelin\\contracts-upgradeable\\token\\ERC20\\ERC20Upgradeable.sol:43"
+          },
+          {
+            "label": "_symbol",
+            "offset": 0,
+            "slot": "55",
+            "type": "t_string_storage",
+            "contract": "ERC20Upgradeable",
+            "src": "@openzeppelin\\contracts-upgradeable\\token\\ERC20\\ERC20Upgradeable.sol:44"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "56",
+            "type": "t_array(t_uint256)45_storage",
+            "contract": "ERC20Upgradeable",
+            "src": "@openzeppelin\\contracts-upgradeable\\token\\ERC20\\ERC20Upgradeable.sol:394"
+          },
+          {
+            "label": "_owner",
+            "offset": 0,
+            "slot": "101",
+            "type": "t_address",
+            "contract": "OwnableUpgradeable",
+            "src": "@openzeppelin\\contracts-upgradeable\\access\\OwnableUpgradeable.sol:22"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "102",
+            "type": "t_array(t_uint256)49_storage",
+            "contract": "OwnableUpgradeable",
+            "src": "@openzeppelin\\contracts-upgradeable\\access\\OwnableUpgradeable.sol:87"
+          },
+          {
+            "label": "settings",
+            "offset": 0,
+            "slot": "151",
+            "type": "t_contract(ISphereSettings)16904",
+            "contract": "SphereToken",
+            "src": "contracts\\SphereToken.sol:40"
+          },
+          {
+            "label": "initialDistributionFinished",
+            "offset": 20,
+            "slot": "151",
+            "type": "t_bool",
+            "contract": "SphereToken",
+            "src": "contracts\\SphereToken.sol:41"
+          },
+          {
+            "label": "inSwap",
+            "offset": 21,
+            "slot": "151",
+            "type": "t_bool",
+            "contract": "SphereToken",
+            "src": "contracts\\SphereToken.sol:42"
+          },
+          {
+            "label": "_totalSupply",
+            "offset": 0,
+            "slot": "152",
+            "type": "t_uint256",
+            "contract": "SphereToken",
+            "src": "contracts\\SphereToken.sol:43"
+          },
+          {
+            "label": "gonsPerFragment",
+            "offset": 0,
+            "slot": "153",
+            "type": "t_uint256",
+            "contract": "SphereToken",
+            "src": "contracts\\SphereToken.sol:44"
+          },
+          {
+            "label": "makerPairs",
+            "offset": 0,
+            "slot": "154",
+            "type": "t_array(t_address)dyn_storage",
+            "contract": "SphereToken",
+            "src": "contracts\\SphereToken.sol:48"
+          },
+          {
+            "label": "partyArray",
+            "offset": 0,
+            "slot": "155",
+            "type": "t_array(t_address)dyn_storage",
+            "contract": "SphereToken",
+            "src": "contracts\\SphereToken.sol:49"
+          },
+          {
+            "label": "sphereGamesContracts",
+            "offset": 0,
+            "slot": "156",
+            "type": "t_array(t_address)dyn_storage",
+            "contract": "SphereToken",
+            "src": "contracts\\SphereToken.sol:50"
+          },
+          {
+            "label": "subContracts",
+            "offset": 0,
+            "slot": "157",
+            "type": "t_array(t_address)dyn_storage",
+            "contract": "SphereToken",
+            "src": "contracts\\SphereToken.sol:51"
+          },
+          {
+            "label": "lpContracts",
+            "offset": 0,
+            "slot": "158",
+            "type": "t_array(t_address)dyn_storage",
+            "contract": "SphereToken",
+            "src": "contracts\\SphereToken.sol:52"
+          },
+          {
+            "label": "feesOnNormalTransfers",
+            "offset": 0,
+            "slot": "159",
+            "type": "t_bool",
+            "contract": "SphereToken",
+            "src": "contracts\\SphereToken.sol:54"
+          },
+          {
+            "label": "autoRebase",
+            "offset": 1,
+            "slot": "159",
+            "type": "t_bool",
+            "contract": "SphereToken",
+            "src": "contracts\\SphereToken.sol:56"
+          },
+          {
+            "label": "isLiquidityEnabled",
+            "offset": 2,
+            "slot": "159",
+            "type": "t_bool",
+            "contract": "SphereToken",
+            "src": "contracts\\SphereToken.sol:58"
+          },
+          {
+            "label": "isMoveBalance",
+            "offset": 3,
+            "slot": "159",
+            "type": "t_bool",
+            "contract": "SphereToken",
+            "src": "contracts\\SphereToken.sol:59"
+          },
+          {
+            "label": "isSellHourlyLimit",
+            "offset": 4,
+            "slot": "159",
+            "type": "t_bool",
+            "contract": "SphereToken",
+            "src": "contracts\\SphereToken.sol:60"
+          },
+          {
+            "label": "isTaxBracket",
+            "offset": 5,
+            "slot": "159",
+            "type": "t_bool",
+            "contract": "SphereToken",
+            "src": "contracts\\SphereToken.sol:61"
+          },
+          {
+            "label": "isWall",
+            "offset": 6,
+            "slot": "159",
+            "type": "t_bool",
+            "contract": "SphereToken",
+            "src": "contracts\\SphereToken.sol:62"
+          },
+          {
+            "label": "partyTime",
+            "offset": 7,
+            "slot": "159",
+            "type": "t_bool",
+            "contract": "SphereToken",
+            "src": "contracts\\SphereToken.sol:63"
+          },
+          {
+            "label": "swapEnabled",
+            "offset": 8,
+            "slot": "159",
+            "type": "t_bool",
+            "contract": "SphereToken",
+            "src": "contracts\\SphereToken.sol:64"
+          },
+          {
+            "label": "goDeflationary",
+            "offset": 9,
+            "slot": "159",
+            "type": "t_bool",
+            "contract": "SphereToken",
+            "src": "contracts\\SphereToken.sol:65"
+          },
+          {
+            "label": "investorInfoMap",
+            "offset": 0,
+            "slot": "160",
+            "type": "t_mapping(t_address,t_struct(InvestorInfo)16927_storage)",
+            "contract": "SphereToken",
+            "src": "contracts\\SphereToken.sol:67"
+          },
+          {
+            "label": "isBuyFeeExempt",
+            "offset": 0,
+            "slot": "161",
+            "type": "t_mapping(t_address,t_bool)",
+            "contract": "SphereToken",
+            "src": "contracts\\SphereToken.sol:68"
+          },
+          {
+            "label": "isSellFeeExempt",
+            "offset": 0,
+            "slot": "162",
+            "type": "t_mapping(t_address,t_bool)",
+            "contract": "SphereToken",
+            "src": "contracts\\SphereToken.sol:69"
+          },
+          {
+            "label": "isTotalFeeExempt",
+            "offset": 0,
+            "slot": "163",
+            "type": "t_mapping(t_address,t_bool)",
+            "contract": "SphereToken",
+            "src": "contracts\\SphereToken.sol:70"
+          },
+          {
+            "label": "canRebase",
+            "offset": 0,
+            "slot": "164",
+            "type": "t_mapping(t_address,t_bool)",
+            "contract": "SphereToken",
+            "src": "contracts\\SphereToken.sol:71"
+          },
+          {
+            "label": "canSetRewardYield",
+            "offset": 0,
+            "slot": "165",
+            "type": "t_mapping(t_address,t_bool)",
+            "contract": "SphereToken",
+            "src": "contracts\\SphereToken.sol:72"
+          },
+          {
+            "label": "_disallowedToMove",
+            "offset": 0,
+            "slot": "166",
+            "type": "t_mapping(t_address,t_bool)",
+            "contract": "SphereToken",
+            "src": "contracts\\SphereToken.sol:73"
+          },
+          {
+            "label": "automatedMarketMakerPairs",
+            "offset": 0,
+            "slot": "167",
+            "type": "t_mapping(t_address,t_bool)",
+            "contract": "SphereToken",
+            "src": "contracts\\SphereToken.sol:74"
+          },
+          {
+            "label": "partyArrayCheck",
+            "offset": 0,
+            "slot": "168",
+            "type": "t_mapping(t_address,t_bool)",
+            "contract": "SphereToken",
+            "src": "contracts\\SphereToken.sol:75"
+          },
+          {
+            "label": "sphereGamesCheck",
+            "offset": 0,
+            "slot": "169",
+            "type": "t_mapping(t_address,t_bool)",
+            "contract": "SphereToken",
+            "src": "contracts\\SphereToken.sol:76"
+          },
+          {
+            "label": "subContractCheck",
+            "offset": 0,
+            "slot": "170",
+            "type": "t_mapping(t_address,t_bool)",
+            "contract": "SphereToken",
+            "src": "contracts\\SphereToken.sol:77"
+          },
+          {
+            "label": "lpContractCheck",
+            "offset": 0,
+            "slot": "171",
+            "type": "t_mapping(t_address,t_bool)",
+            "contract": "SphereToken",
+            "src": "contracts\\SphereToken.sol:78"
+          },
+          {
+            "label": "partyArrayFee",
+            "offset": 0,
+            "slot": "172",
+            "type": "t_mapping(t_address,t_uint256)",
+            "contract": "SphereToken",
+            "src": "contracts\\SphereToken.sol:79"
+          },
+          {
+            "label": "_allowedFragments",
+            "offset": 0,
+            "slot": "173",
+            "type": "t_mapping(t_address,t_mapping(t_address,t_uint256))",
+            "contract": "SphereToken",
+            "src": "contracts\\SphereToken.sol:80"
+          },
+          {
+            "label": "_gonBalances",
+            "offset": 0,
+            "slot": "174",
+            "type": "t_mapping(t_address,t_uint256)",
+            "contract": "SphereToken",
+            "src": "contracts\\SphereToken.sol:81"
+          },
+          {
+            "label": "rewardYieldDenominator",
+            "offset": 0,
+            "slot": "175",
+            "type": "t_uint256",
+            "contract": "SphereToken",
+            "src": "contracts\\SphereToken.sol:83"
+          },
+          {
+            "label": "investRemovalDelay",
+            "offset": 0,
+            "slot": "176",
+            "type": "t_uint256",
+            "contract": "SphereToken",
+            "src": "contracts\\SphereToken.sol:85"
+          },
+          {
+            "label": "partyListDivisor",
+            "offset": 0,
+            "slot": "177",
+            "type": "t_uint256",
+            "contract": "SphereToken",
+            "src": "contracts\\SphereToken.sol:86"
+          },
+          {
+            "label": "rebaseFrequency",
+            "offset": 0,
+            "slot": "178",
+            "type": "t_uint256",
+            "contract": "SphereToken",
+            "src": "contracts\\SphereToken.sol:87"
+          },
+          {
+            "label": "rewardYield",
+            "offset": 0,
+            "slot": "179",
+            "type": "t_uint256",
+            "contract": "SphereToken",
+            "src": "contracts\\SphereToken.sol:88"
+          },
+          {
+            "label": "markerPairCount",
+            "offset": 0,
+            "slot": "180",
+            "type": "t_uint256",
+            "contract": "SphereToken",
+            "src": "contracts\\SphereToken.sol:90"
+          },
+          {
+            "label": "index",
+            "offset": 0,
+            "slot": "181",
+            "type": "t_uint256",
+            "contract": "SphereToken",
+            "src": "contracts\\SphereToken.sol:91"
+          },
+          {
+            "label": "maxBuyTransactionAmount",
+            "offset": 0,
+            "slot": "182",
+            "type": "t_uint256",
+            "contract": "SphereToken",
+            "src": "contracts\\SphereToken.sol:92"
+          },
+          {
+            "label": "maxSellTransactionAmount",
+            "offset": 0,
+            "slot": "183",
+            "type": "t_uint256",
+            "contract": "SphereToken",
+            "src": "contracts\\SphereToken.sol:93"
+          },
+          {
+            "label": "nextRebase",
+            "offset": 0,
+            "slot": "184",
+            "type": "t_uint256",
+            "contract": "SphereToken",
+            "src": "contracts\\SphereToken.sol:94"
+          },
+          {
+            "label": "rebaseEpoch",
+            "offset": 0,
+            "slot": "185",
+            "type": "t_uint256",
+            "contract": "SphereToken",
+            "src": "contracts\\SphereToken.sol:95"
+          },
+          {
+            "label": "taxBracketMultiplier",
+            "offset": 0,
+            "slot": "186",
+            "type": "t_uint256",
+            "contract": "SphereToken",
+            "src": "contracts\\SphereToken.sol:96"
+          },
+          {
+            "label": "wallDivisor",
+            "offset": 0,
+            "slot": "187",
+            "type": "t_uint256",
+            "contract": "SphereToken",
+            "src": "contracts\\SphereToken.sol:97"
+          },
+          {
+            "label": "liquidityReceiver",
+            "offset": 0,
+            "slot": "188",
+            "type": "t_address",
+            "contract": "SphereToken",
+            "src": "contracts\\SphereToken.sol:99"
+          },
+          {
+            "label": "treasuryReceiver",
+            "offset": 0,
+            "slot": "189",
+            "type": "t_address",
+            "contract": "SphereToken",
+            "src": "contracts\\SphereToken.sol:100"
+          },
+          {
+            "label": "riskFreeValueReceiver",
+            "offset": 0,
+            "slot": "190",
+            "type": "t_address",
+            "contract": "SphereToken",
+            "src": "contracts\\SphereToken.sol:101"
+          },
+          {
+            "label": "galaxyBondReceiver",
+            "offset": 0,
+            "slot": "191",
+            "type": "t_address",
+            "contract": "SphereToken",
+            "src": "contracts\\SphereToken.sol:102"
+          },
+          {
+            "label": "sphereSwapper",
+            "offset": 0,
+            "slot": "192",
+            "type": "t_address",
+            "contract": "SphereToken",
+            "src": "contracts\\SphereToken.sol:104"
+          },
+          {
+            "label": "maxInvestRemovablePerPeriod",
+            "offset": 0,
+            "slot": "193",
+            "type": "t_uint256",
+            "contract": "SphereToken",
+            "src": "contracts\\SphereToken.sol:106"
+          },
+          {
+            "label": "isGameDepositLimited",
+            "offset": 0,
+            "slot": "194",
+            "type": "t_bool",
+            "contract": "SphereToken",
+            "src": "contracts\\SphereToken.sol:110"
+          },
+          {
+            "label": "gameDepositDelay",
+            "offset": 0,
+            "slot": "195",
+            "type": "t_uint256",
+            "contract": "SphereToken",
+            "src": "contracts\\SphereToken.sol:111"
+          },
+          {
+            "label": "gameDepositMaxShare",
+            "offset": 0,
+            "slot": "196",
+            "type": "t_uint256",
+            "contract": "SphereToken",
+            "src": "contracts\\SphereToken.sol:112"
+          },
+          {
+            "label": "sphereGamePool",
+            "offset": 0,
+            "slot": "197",
+            "type": "t_address",
+            "contract": "SphereToken",
+            "src": "contracts\\SphereToken.sol:113"
+          },
+          {
+            "label": "hackerDeadLock",
+            "offset": 0,
+            "slot": "198",
+            "type": "t_mapping(t_address,t_bool)",
+            "contract": "SphereToken",
+            "src": "contracts\\SphereToken.sol:119"
+          },
+          {
+            "label": "multisig",
+            "offset": 0,
+            "slot": "199",
+            "type": "t_address",
+            "contract": "SphereToken",
+            "src": "contracts\\SphereToken.sol:120"
+          }
+        ],
+        "types": {
+          "t_address": {
+            "label": "address",
+            "numberOfBytes": "20"
+          },
+          "t_array(t_address)dyn_storage": {
+            "label": "address[]",
+            "numberOfBytes": "32"
+          },
+          "t_array(t_struct(GameDeposit)16916_storage)dyn_storage": {
+            "label": "struct ISphereToken.GameDeposit[]",
+            "numberOfBytes": "32"
+          },
+          "t_array(t_struct(Withdrawal)16911_storage)dyn_storage": {
+            "label": "struct ISphereToken.Withdrawal[]",
+            "numberOfBytes": "32"
+          },
+          "t_array(t_uint256)45_storage": {
+            "label": "uint256[45]",
+            "numberOfBytes": "1440"
+          },
+          "t_array(t_uint256)49_storage": {
+            "label": "uint256[49]",
+            "numberOfBytes": "1568"
+          },
+          "t_array(t_uint256)50_storage": {
+            "label": "uint256[50]",
+            "numberOfBytes": "1600"
+          },
+          "t_bool": {
+            "label": "bool",
+            "numberOfBytes": "1"
+          },
+          "t_contract(ISphereSettings)16904": {
+            "label": "contract ISphereSettings",
+            "numberOfBytes": "20"
+          },
+          "t_mapping(t_address,t_bool)": {
+            "label": "mapping(address => bool)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_address,t_mapping(t_address,t_uint256))": {
+            "label": "mapping(address => mapping(address => uint256))",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_address,t_struct(InvestorInfo)16927_storage)": {
+            "label": "mapping(address => struct ISphereToken.InvestorInfo)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_address,t_uint256)": {
+            "label": "mapping(address => uint256)",
+            "numberOfBytes": "32"
+          },
+          "t_string_storage": {
+            "label": "string",
+            "numberOfBytes": "32"
+          },
+          "t_struct(GameDeposit)16916_storage": {
+            "label": "struct ISphereToken.GameDeposit",
+            "members": [
+              {
+                "label": "timestamp",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "depositAmount",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "1"
+              }
+            ],
+            "numberOfBytes": "64"
+          },
+          "t_struct(InvestorInfo)16927_storage": {
+            "label": "struct ISphereToken.InvestorInfo",
+            "members": [
+              {
+                "label": "totalInvestableExchanged",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "withdrawHistory",
+                "type": "t_array(t_struct(Withdrawal)16911_storage)dyn_storage",
+                "offset": 0,
+                "slot": "1"
+              },
+              {
+                "label": "gameDepositHistory",
+                "type": "t_array(t_struct(GameDeposit)16916_storage)dyn_storage",
+                "offset": 0,
+                "slot": "2"
+              }
+            ],
+            "numberOfBytes": "96"
+          },
+          "t_struct(Withdrawal)16911_storage": {
+            "label": "struct ISphereToken.Withdrawal",
+            "members": [
+              {
+                "label": "timestamp",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "withdrawAmount",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "1"
+              }
+            ],
+            "numberOfBytes": "64"
+          },
+          "t_uint256": {
+            "label": "uint256",
+            "numberOfBytes": "32"
+          },
+          "t_uint8": {
+            "label": "uint8",
+            "numberOfBytes": "1"
+          }
+        }
+      }
+    },
+    "b99a08ae8db82a1762ef10fbdb6df74dbb35051f077821f8ff818400ba1658bc": {
+      "address": "0x59e6FE04e187d042012627560DA7399b5b41F2cc",
+      "txHash": "0x3fe632c13ded4d11efd1b5f2affc155b077190141638f4f7c317104031c3f170",
+      "layout": {
+        "storage": [
+          {
+            "label": "_initialized",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_uint8",
+            "contract": "Initializable",
+            "src": "@openzeppelin\\contracts-upgradeable\\proxy\\utils\\Initializable.sol:62",
+            "retypedFrom": "bool"
+          },
+          {
+            "label": "_initializing",
+            "offset": 1,
+            "slot": "0",
+            "type": "t_bool",
+            "contract": "Initializable",
+            "src": "@openzeppelin\\contracts-upgradeable\\proxy\\utils\\Initializable.sol:67"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_array(t_uint256)50_storage",
+            "contract": "ContextUpgradeable",
+            "src": "@openzeppelin\\contracts-upgradeable\\utils\\ContextUpgradeable.sol:36"
+          },
+          {
+            "label": "_balances",
+            "offset": 0,
+            "slot": "51",
+            "type": "t_mapping(t_address,t_uint256)",
+            "contract": "ERC20Upgradeable",
+            "src": "@openzeppelin\\contracts-upgradeable\\token\\ERC20\\ERC20Upgradeable.sol:37"
+          },
+          {
+            "label": "_allowances",
+            "offset": 0,
+            "slot": "52",
+            "type": "t_mapping(t_address,t_mapping(t_address,t_uint256))",
+            "contract": "ERC20Upgradeable",
+            "src": "@openzeppelin\\contracts-upgradeable\\token\\ERC20\\ERC20Upgradeable.sol:39"
+          },
+          {
+            "label": "_totalSupply",
+            "offset": 0,
+            "slot": "53",
+            "type": "t_uint256",
+            "contract": "ERC20Upgradeable",
+            "src": "@openzeppelin\\contracts-upgradeable\\token\\ERC20\\ERC20Upgradeable.sol:41"
+          },
+          {
+            "label": "_name",
+            "offset": 0,
+            "slot": "54",
+            "type": "t_string_storage",
+            "contract": "ERC20Upgradeable",
+            "src": "@openzeppelin\\contracts-upgradeable\\token\\ERC20\\ERC20Upgradeable.sol:43"
+          },
+          {
+            "label": "_symbol",
+            "offset": 0,
+            "slot": "55",
+            "type": "t_string_storage",
+            "contract": "ERC20Upgradeable",
+            "src": "@openzeppelin\\contracts-upgradeable\\token\\ERC20\\ERC20Upgradeable.sol:44"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "56",
+            "type": "t_array(t_uint256)45_storage",
+            "contract": "ERC20Upgradeable",
+            "src": "@openzeppelin\\contracts-upgradeable\\token\\ERC20\\ERC20Upgradeable.sol:394"
+          },
+          {
+            "label": "_owner",
+            "offset": 0,
+            "slot": "101",
+            "type": "t_address",
+            "contract": "OwnableUpgradeable",
+            "src": "@openzeppelin\\contracts-upgradeable\\access\\OwnableUpgradeable.sol:22"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "102",
+            "type": "t_array(t_uint256)49_storage",
+            "contract": "OwnableUpgradeable",
+            "src": "@openzeppelin\\contracts-upgradeable\\access\\OwnableUpgradeable.sol:87"
+          },
+          {
+            "label": "settings",
+            "offset": 0,
+            "slot": "151",
+            "type": "t_contract(ISphereSettings)4433",
+            "contract": "SphereToken",
+            "src": "contracts\\SphereToken.sol:40"
+          },
+          {
+            "label": "initialDistributionFinished",
+            "offset": 20,
+            "slot": "151",
+            "type": "t_bool",
+            "contract": "SphereToken",
+            "src": "contracts\\SphereToken.sol:41"
+          },
+          {
+            "label": "inSwap",
+            "offset": 21,
+            "slot": "151",
+            "type": "t_bool",
+            "contract": "SphereToken",
+            "src": "contracts\\SphereToken.sol:42"
+          },
+          {
+            "label": "_totalSupply",
+            "offset": 0,
+            "slot": "152",
+            "type": "t_uint256",
+            "contract": "SphereToken",
+            "src": "contracts\\SphereToken.sol:43"
+          },
+          {
+            "label": "gonsPerFragment",
+            "offset": 0,
+            "slot": "153",
+            "type": "t_uint256",
+            "contract": "SphereToken",
+            "src": "contracts\\SphereToken.sol:44"
+          },
+          {
+            "label": "makerPairs",
+            "offset": 0,
+            "slot": "154",
+            "type": "t_array(t_address)dyn_storage",
+            "contract": "SphereToken",
+            "src": "contracts\\SphereToken.sol:48"
+          },
+          {
+            "label": "partyArray",
+            "offset": 0,
+            "slot": "155",
+            "type": "t_array(t_address)dyn_storage",
+            "contract": "SphereToken",
+            "src": "contracts\\SphereToken.sol:49"
+          },
+          {
+            "label": "sphereGamesContracts",
+            "offset": 0,
+            "slot": "156",
+            "type": "t_array(t_address)dyn_storage",
+            "contract": "SphereToken",
+            "src": "contracts\\SphereToken.sol:50"
+          },
+          {
+            "label": "subContracts",
+            "offset": 0,
+            "slot": "157",
+            "type": "t_array(t_address)dyn_storage",
+            "contract": "SphereToken",
+            "src": "contracts\\SphereToken.sol:51"
+          },
+          {
+            "label": "lpContracts",
+            "offset": 0,
+            "slot": "158",
+            "type": "t_array(t_address)dyn_storage",
+            "contract": "SphereToken",
+            "src": "contracts\\SphereToken.sol:52"
+          },
+          {
+            "label": "feesOnNormalTransfers",
+            "offset": 0,
+            "slot": "159",
+            "type": "t_bool",
+            "contract": "SphereToken",
+            "src": "contracts\\SphereToken.sol:54"
+          },
+          {
+            "label": "autoRebase",
+            "offset": 1,
+            "slot": "159",
+            "type": "t_bool",
+            "contract": "SphereToken",
+            "src": "contracts\\SphereToken.sol:56"
+          },
+          {
+            "label": "isLiquidityEnabled",
+            "offset": 2,
+            "slot": "159",
+            "type": "t_bool",
+            "contract": "SphereToken",
+            "src": "contracts\\SphereToken.sol:58"
+          },
+          {
+            "label": "isMoveBalance",
+            "offset": 3,
+            "slot": "159",
+            "type": "t_bool",
+            "contract": "SphereToken",
+            "src": "contracts\\SphereToken.sol:59"
+          },
+          {
+            "label": "isSellHourlyLimit",
+            "offset": 4,
+            "slot": "159",
+            "type": "t_bool",
+            "contract": "SphereToken",
+            "src": "contracts\\SphereToken.sol:60"
+          },
+          {
+            "label": "isTaxBracket",
+            "offset": 5,
+            "slot": "159",
+            "type": "t_bool",
+            "contract": "SphereToken",
+            "src": "contracts\\SphereToken.sol:61"
+          },
+          {
+            "label": "isWall",
+            "offset": 6,
+            "slot": "159",
+            "type": "t_bool",
+            "contract": "SphereToken",
+            "src": "contracts\\SphereToken.sol:62"
+          },
+          {
+            "label": "partyTime",
+            "offset": 7,
+            "slot": "159",
+            "type": "t_bool",
+            "contract": "SphereToken",
+            "src": "contracts\\SphereToken.sol:63"
+          },
+          {
+            "label": "swapEnabled",
+            "offset": 8,
+            "slot": "159",
+            "type": "t_bool",
+            "contract": "SphereToken",
+            "src": "contracts\\SphereToken.sol:64"
+          },
+          {
+            "label": "goDeflationary",
+            "offset": 9,
+            "slot": "159",
+            "type": "t_bool",
+            "contract": "SphereToken",
+            "src": "contracts\\SphereToken.sol:65"
+          },
+          {
+            "label": "investorInfoMap",
+            "offset": 0,
+            "slot": "160",
+            "type": "t_mapping(t_address,t_struct(InvestorInfo)4456_storage)",
+            "contract": "SphereToken",
+            "src": "contracts\\SphereToken.sol:67"
+          },
+          {
+            "label": "isBuyFeeExempt",
+            "offset": 0,
+            "slot": "161",
+            "type": "t_mapping(t_address,t_bool)",
+            "contract": "SphereToken",
+            "src": "contracts\\SphereToken.sol:68"
+          },
+          {
+            "label": "isSellFeeExempt",
+            "offset": 0,
+            "slot": "162",
+            "type": "t_mapping(t_address,t_bool)",
+            "contract": "SphereToken",
+            "src": "contracts\\SphereToken.sol:69"
+          },
+          {
+            "label": "isTotalFeeExempt",
+            "offset": 0,
+            "slot": "163",
+            "type": "t_mapping(t_address,t_bool)",
+            "contract": "SphereToken",
+            "src": "contracts\\SphereToken.sol:70"
+          },
+          {
+            "label": "canRebase",
+            "offset": 0,
+            "slot": "164",
+            "type": "t_mapping(t_address,t_bool)",
+            "contract": "SphereToken",
+            "src": "contracts\\SphereToken.sol:71"
+          },
+          {
+            "label": "canSetRewardYield",
+            "offset": 0,
+            "slot": "165",
+            "type": "t_mapping(t_address,t_bool)",
+            "contract": "SphereToken",
+            "src": "contracts\\SphereToken.sol:72"
+          },
+          {
+            "label": "_disallowedToMove",
+            "offset": 0,
+            "slot": "166",
+            "type": "t_mapping(t_address,t_bool)",
+            "contract": "SphereToken",
+            "src": "contracts\\SphereToken.sol:73"
+          },
+          {
+            "label": "automatedMarketMakerPairs",
+            "offset": 0,
+            "slot": "167",
+            "type": "t_mapping(t_address,t_bool)",
+            "contract": "SphereToken",
+            "src": "contracts\\SphereToken.sol:74"
+          },
+          {
+            "label": "partyArrayCheck",
+            "offset": 0,
+            "slot": "168",
+            "type": "t_mapping(t_address,t_bool)",
+            "contract": "SphereToken",
+            "src": "contracts\\SphereToken.sol:75"
+          },
+          {
+            "label": "sphereGamesCheck",
+            "offset": 0,
+            "slot": "169",
+            "type": "t_mapping(t_address,t_bool)",
+            "contract": "SphereToken",
+            "src": "contracts\\SphereToken.sol:76"
+          },
+          {
+            "label": "subContractCheck",
+            "offset": 0,
+            "slot": "170",
+            "type": "t_mapping(t_address,t_bool)",
+            "contract": "SphereToken",
+            "src": "contracts\\SphereToken.sol:77"
+          },
+          {
+            "label": "lpContractCheck",
+            "offset": 0,
+            "slot": "171",
+            "type": "t_mapping(t_address,t_bool)",
+            "contract": "SphereToken",
+            "src": "contracts\\SphereToken.sol:78"
+          },
+          {
+            "label": "partyArrayFee",
+            "offset": 0,
+            "slot": "172",
+            "type": "t_mapping(t_address,t_uint256)",
+            "contract": "SphereToken",
+            "src": "contracts\\SphereToken.sol:79"
+          },
+          {
+            "label": "_allowedFragments",
+            "offset": 0,
+            "slot": "173",
+            "type": "t_mapping(t_address,t_mapping(t_address,t_uint256))",
+            "contract": "SphereToken",
+            "src": "contracts\\SphereToken.sol:80"
+          },
+          {
+            "label": "_gonBalances",
+            "offset": 0,
+            "slot": "174",
+            "type": "t_mapping(t_address,t_uint256)",
+            "contract": "SphereToken",
+            "src": "contracts\\SphereToken.sol:81"
+          },
+          {
+            "label": "rewardYieldDenominator",
+            "offset": 0,
+            "slot": "175",
+            "type": "t_uint256",
+            "contract": "SphereToken",
+            "src": "contracts\\SphereToken.sol:83"
+          },
+          {
+            "label": "investRemovalDelay",
+            "offset": 0,
+            "slot": "176",
+            "type": "t_uint256",
+            "contract": "SphereToken",
+            "src": "contracts\\SphereToken.sol:85"
+          },
+          {
+            "label": "partyListDivisor",
+            "offset": 0,
+            "slot": "177",
+            "type": "t_uint256",
+            "contract": "SphereToken",
+            "src": "contracts\\SphereToken.sol:86"
+          },
+          {
+            "label": "rebaseFrequency",
+            "offset": 0,
+            "slot": "178",
+            "type": "t_uint256",
+            "contract": "SphereToken",
+            "src": "contracts\\SphereToken.sol:87"
+          },
+          {
+            "label": "rewardYield",
+            "offset": 0,
+            "slot": "179",
+            "type": "t_uint256",
+            "contract": "SphereToken",
+            "src": "contracts\\SphereToken.sol:88"
+          },
+          {
+            "label": "markerPairCount",
+            "offset": 0,
+            "slot": "180",
+            "type": "t_uint256",
+            "contract": "SphereToken",
+            "src": "contracts\\SphereToken.sol:90"
+          },
+          {
+            "label": "index",
+            "offset": 0,
+            "slot": "181",
+            "type": "t_uint256",
+            "contract": "SphereToken",
+            "src": "contracts\\SphereToken.sol:91"
+          },
+          {
+            "label": "maxBuyTransactionAmount",
+            "offset": 0,
+            "slot": "182",
+            "type": "t_uint256",
+            "contract": "SphereToken",
+            "src": "contracts\\SphereToken.sol:92"
+          },
+          {
+            "label": "maxSellTransactionAmount",
+            "offset": 0,
+            "slot": "183",
+            "type": "t_uint256",
+            "contract": "SphereToken",
+            "src": "contracts\\SphereToken.sol:93"
+          },
+          {
+            "label": "nextRebase",
+            "offset": 0,
+            "slot": "184",
+            "type": "t_uint256",
+            "contract": "SphereToken",
+            "src": "contracts\\SphereToken.sol:94"
+          },
+          {
+            "label": "rebaseEpoch",
+            "offset": 0,
+            "slot": "185",
+            "type": "t_uint256",
+            "contract": "SphereToken",
+            "src": "contracts\\SphereToken.sol:95"
+          },
+          {
+            "label": "taxBracketMultiplier",
+            "offset": 0,
+            "slot": "186",
+            "type": "t_uint256",
+            "contract": "SphereToken",
+            "src": "contracts\\SphereToken.sol:96"
+          },
+          {
+            "label": "wallDivisor",
+            "offset": 0,
+            "slot": "187",
+            "type": "t_uint256",
+            "contract": "SphereToken",
+            "src": "contracts\\SphereToken.sol:97"
+          },
+          {
+            "label": "liquidityReceiver",
+            "offset": 0,
+            "slot": "188",
+            "type": "t_address",
+            "contract": "SphereToken",
+            "src": "contracts\\SphereToken.sol:99"
+          },
+          {
+            "label": "treasuryReceiver",
+            "offset": 0,
+            "slot": "189",
+            "type": "t_address",
+            "contract": "SphereToken",
+            "src": "contracts\\SphereToken.sol:100"
+          },
+          {
+            "label": "riskFreeValueReceiver",
+            "offset": 0,
+            "slot": "190",
+            "type": "t_address",
+            "contract": "SphereToken",
+            "src": "contracts\\SphereToken.sol:101"
+          },
+          {
+            "label": "galaxyBondReceiver",
+            "offset": 0,
+            "slot": "191",
+            "type": "t_address",
+            "contract": "SphereToken",
+            "src": "contracts\\SphereToken.sol:102"
+          },
+          {
+            "label": "sphereSwapper",
+            "offset": 0,
+            "slot": "192",
+            "type": "t_address",
+            "contract": "SphereToken",
+            "src": "contracts\\SphereToken.sol:104"
+          },
+          {
+            "label": "maxInvestRemovablePerPeriod",
+            "offset": 0,
+            "slot": "193",
+            "type": "t_uint256",
+            "contract": "SphereToken",
+            "src": "contracts\\SphereToken.sol:106"
+          },
+          {
+            "label": "isGameDepositLimited",
+            "offset": 0,
+            "slot": "194",
+            "type": "t_bool",
+            "contract": "SphereToken",
+            "src": "contracts\\SphereToken.sol:110"
+          },
+          {
+            "label": "gameDepositDelay",
+            "offset": 0,
+            "slot": "195",
+            "type": "t_uint256",
+            "contract": "SphereToken",
+            "src": "contracts\\SphereToken.sol:111"
+          },
+          {
+            "label": "gameDepositMaxShare",
+            "offset": 0,
+            "slot": "196",
+            "type": "t_uint256",
+            "contract": "SphereToken",
+            "src": "contracts\\SphereToken.sol:112"
+          },
+          {
+            "label": "sphereGamePool",
+            "offset": 0,
+            "slot": "197",
+            "type": "t_address",
+            "contract": "SphereToken",
+            "src": "contracts\\SphereToken.sol:113"
+          },
+          {
+            "label": "hackerDeadLock",
+            "offset": 0,
+            "slot": "198",
+            "type": "t_mapping(t_address,t_bool)",
+            "contract": "SphereToken",
+            "src": "contracts\\SphereToken.sol:119"
+          },
+          {
+            "label": "multisig",
+            "offset": 0,
+            "slot": "199",
+            "type": "t_address",
+            "contract": "SphereToken",
+            "src": "contracts\\SphereToken.sol:120"
+          },
+          {
+            "label": "isTransferFeeExempt",
+            "offset": 0,
+            "slot": "200",
+            "type": "t_mapping(t_address,t_bool)",
+            "contract": "SphereToken",
+            "src": "contracts\\SphereToken.sol:121"
+          }
+        ],
+        "types": {
+          "t_address": {
+            "label": "address",
+            "numberOfBytes": "20"
+          },
+          "t_array(t_address)dyn_storage": {
+            "label": "address[]",
+            "numberOfBytes": "32"
+          },
+          "t_array(t_struct(GameDeposit)4445_storage)dyn_storage": {
+            "label": "struct ISphereToken.GameDeposit[]",
+            "numberOfBytes": "32"
+          },
+          "t_array(t_struct(Withdrawal)4440_storage)dyn_storage": {
+            "label": "struct ISphereToken.Withdrawal[]",
+            "numberOfBytes": "32"
+          },
+          "t_array(t_uint256)45_storage": {
+            "label": "uint256[45]",
+            "numberOfBytes": "1440"
+          },
+          "t_array(t_uint256)49_storage": {
+            "label": "uint256[49]",
+            "numberOfBytes": "1568"
+          },
+          "t_array(t_uint256)50_storage": {
+            "label": "uint256[50]",
+            "numberOfBytes": "1600"
+          },
+          "t_bool": {
+            "label": "bool",
+            "numberOfBytes": "1"
+          },
+          "t_contract(ISphereSettings)4433": {
+            "label": "contract ISphereSettings",
+            "numberOfBytes": "20"
+          },
+          "t_mapping(t_address,t_bool)": {
+            "label": "mapping(address => bool)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_address,t_mapping(t_address,t_uint256))": {
+            "label": "mapping(address => mapping(address => uint256))",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_address,t_struct(InvestorInfo)4456_storage)": {
+            "label": "mapping(address => struct ISphereToken.InvestorInfo)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_address,t_uint256)": {
+            "label": "mapping(address => uint256)",
+            "numberOfBytes": "32"
+          },
+          "t_string_storage": {
+            "label": "string",
+            "numberOfBytes": "32"
+          },
+          "t_struct(GameDeposit)4445_storage": {
+            "label": "struct ISphereToken.GameDeposit",
+            "members": [
+              {
+                "label": "timestamp",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "depositAmount",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "1"
+              }
+            ],
+            "numberOfBytes": "64"
+          },
+          "t_struct(InvestorInfo)4456_storage": {
+            "label": "struct ISphereToken.InvestorInfo",
+            "members": [
+              {
+                "label": "totalInvestableExchanged",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "withdrawHistory",
+                "type": "t_array(t_struct(Withdrawal)4440_storage)dyn_storage",
+                "offset": 0,
+                "slot": "1"
+              },
+              {
+                "label": "gameDepositHistory",
+                "type": "t_array(t_struct(GameDeposit)4445_storage)dyn_storage",
+                "offset": 0,
+                "slot": "2"
+              }
+            ],
+            "numberOfBytes": "96"
+          },
+          "t_struct(Withdrawal)4440_storage": {
+            "label": "struct ISphereToken.Withdrawal",
+            "members": [
+              {
+                "label": "timestamp",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "withdrawAmount",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "1"
+              }
+            ],
+            "numberOfBytes": "64"
+          },
+          "t_uint256": {
+            "label": "uint256",
+            "numberOfBytes": "32"
+          },
+          "t_uint8": {
+            "label": "uint8",
+            "numberOfBytes": "1"
+          }
+        }
+      }
+    },
+    "99504687d371d393a164614d0adc185964ffb2386ff807f78472819e92a9f706": {
+      "address": "0x79b20777b5e4B100A096acd300298ADacbB1EA81",
+      "txHash": "0x6bd036447c8685e3ab834469db4617944f3db1034ff245f55665db7079d10e81",
+      "layout": {
+        "storage": [
+          {
+            "label": "_initialized",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_uint8",
+            "contract": "Initializable",
+            "src": "@openzeppelin\\contracts-upgradeable\\proxy\\utils\\Initializable.sol:62",
+            "retypedFrom": "bool"
+          },
+          {
+            "label": "_initializing",
+            "offset": 1,
+            "slot": "0",
+            "type": "t_bool",
+            "contract": "Initializable",
+            "src": "@openzeppelin\\contracts-upgradeable\\proxy\\utils\\Initializable.sol:67"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_array(t_uint256)50_storage",
+            "contract": "ContextUpgradeable",
+            "src": "@openzeppelin\\contracts-upgradeable\\utils\\ContextUpgradeable.sol:36"
+          },
+          {
+            "label": "_balances",
+            "offset": 0,
+            "slot": "51",
+            "type": "t_mapping(t_address,t_uint256)",
+            "contract": "ERC20Upgradeable",
+            "src": "@openzeppelin\\contracts-upgradeable\\token\\ERC20\\ERC20Upgradeable.sol:37"
+          },
+          {
+            "label": "_allowances",
+            "offset": 0,
+            "slot": "52",
+            "type": "t_mapping(t_address,t_mapping(t_address,t_uint256))",
+            "contract": "ERC20Upgradeable",
+            "src": "@openzeppelin\\contracts-upgradeable\\token\\ERC20\\ERC20Upgradeable.sol:39"
+          },
+          {
+            "label": "_totalSupply",
+            "offset": 0,
+            "slot": "53",
+            "type": "t_uint256",
+            "contract": "ERC20Upgradeable",
+            "src": "@openzeppelin\\contracts-upgradeable\\token\\ERC20\\ERC20Upgradeable.sol:41"
+          },
+          {
+            "label": "_name",
+            "offset": 0,
+            "slot": "54",
+            "type": "t_string_storage",
+            "contract": "ERC20Upgradeable",
+            "src": "@openzeppelin\\contracts-upgradeable\\token\\ERC20\\ERC20Upgradeable.sol:43"
+          },
+          {
+            "label": "_symbol",
+            "offset": 0,
+            "slot": "55",
+            "type": "t_string_storage",
+            "contract": "ERC20Upgradeable",
+            "src": "@openzeppelin\\contracts-upgradeable\\token\\ERC20\\ERC20Upgradeable.sol:44"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "56",
+            "type": "t_array(t_uint256)45_storage",
+            "contract": "ERC20Upgradeable",
+            "src": "@openzeppelin\\contracts-upgradeable\\token\\ERC20\\ERC20Upgradeable.sol:394"
+          },
+          {
+            "label": "_owner",
+            "offset": 0,
+            "slot": "101",
+            "type": "t_address",
+            "contract": "OwnableUpgradeable",
+            "src": "@openzeppelin\\contracts-upgradeable\\access\\OwnableUpgradeable.sol:22"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "102",
+            "type": "t_array(t_uint256)49_storage",
+            "contract": "OwnableUpgradeable",
+            "src": "@openzeppelin\\contracts-upgradeable\\access\\OwnableUpgradeable.sol:87"
+          },
+          {
+            "label": "settings",
+            "offset": 0,
+            "slot": "151",
+            "type": "t_contract(ISphereSettings)16902",
+            "contract": "SphereToken",
+            "src": "contracts\\SphereToken.sol:40"
+          },
+          {
+            "label": "initialDistributionFinished",
+            "offset": 20,
+            "slot": "151",
+            "type": "t_bool",
+            "contract": "SphereToken",
+            "src": "contracts\\SphereToken.sol:41"
+          },
+          {
+            "label": "inSwap",
+            "offset": 21,
+            "slot": "151",
+            "type": "t_bool",
+            "contract": "SphereToken",
+            "src": "contracts\\SphereToken.sol:42"
+          },
+          {
+            "label": "_totalSupply",
+            "offset": 0,
+            "slot": "152",
+            "type": "t_uint256",
+            "contract": "SphereToken",
+            "src": "contracts\\SphereToken.sol:43"
+          },
+          {
+            "label": "gonsPerFragment",
+            "offset": 0,
+            "slot": "153",
+            "type": "t_uint256",
+            "contract": "SphereToken",
+            "src": "contracts\\SphereToken.sol:44"
+          },
+          {
+            "label": "makerPairs",
+            "offset": 0,
+            "slot": "154",
+            "type": "t_array(t_address)dyn_storage",
+            "contract": "SphereToken",
+            "src": "contracts\\SphereToken.sol:48"
+          },
+          {
+            "label": "partyArray",
+            "offset": 0,
+            "slot": "155",
+            "type": "t_array(t_address)dyn_storage",
+            "contract": "SphereToken",
+            "src": "contracts\\SphereToken.sol:49"
+          },
+          {
+            "label": "sphereGamesContracts",
+            "offset": 0,
+            "slot": "156",
+            "type": "t_array(t_address)dyn_storage",
+            "contract": "SphereToken",
+            "src": "contracts\\SphereToken.sol:50"
+          },
+          {
+            "label": "subContracts",
+            "offset": 0,
+            "slot": "157",
+            "type": "t_array(t_address)dyn_storage",
+            "contract": "SphereToken",
+            "src": "contracts\\SphereToken.sol:51"
+          },
+          {
+            "label": "lpContracts",
+            "offset": 0,
+            "slot": "158",
+            "type": "t_array(t_address)dyn_storage",
+            "contract": "SphereToken",
+            "src": "contracts\\SphereToken.sol:52"
+          },
+          {
+            "label": "feesOnNormalTransfers",
+            "offset": 0,
+            "slot": "159",
+            "type": "t_bool",
+            "contract": "SphereToken",
+            "src": "contracts\\SphereToken.sol:54"
+          },
+          {
+            "label": "autoRebase",
+            "offset": 1,
+            "slot": "159",
+            "type": "t_bool",
+            "contract": "SphereToken",
+            "src": "contracts\\SphereToken.sol:56"
+          },
+          {
+            "label": "isLiquidityEnabled",
+            "offset": 2,
+            "slot": "159",
+            "type": "t_bool",
+            "contract": "SphereToken",
+            "src": "contracts\\SphereToken.sol:58"
+          },
+          {
+            "label": "isMoveBalance",
+            "offset": 3,
+            "slot": "159",
+            "type": "t_bool",
+            "contract": "SphereToken",
+            "src": "contracts\\SphereToken.sol:59"
+          },
+          {
+            "label": "isSellHourlyLimit",
+            "offset": 4,
+            "slot": "159",
+            "type": "t_bool",
+            "contract": "SphereToken",
+            "src": "contracts\\SphereToken.sol:60"
+          },
+          {
+            "label": "isTaxBracket",
+            "offset": 5,
+            "slot": "159",
+            "type": "t_bool",
+            "contract": "SphereToken",
+            "src": "contracts\\SphereToken.sol:61"
+          },
+          {
+            "label": "isWall",
+            "offset": 6,
+            "slot": "159",
+            "type": "t_bool",
+            "contract": "SphereToken",
+            "src": "contracts\\SphereToken.sol:62"
+          },
+          {
+            "label": "partyTime",
+            "offset": 7,
+            "slot": "159",
+            "type": "t_bool",
+            "contract": "SphereToken",
+            "src": "contracts\\SphereToken.sol:63"
+          },
+          {
+            "label": "swapEnabled",
+            "offset": 8,
+            "slot": "159",
+            "type": "t_bool",
+            "contract": "SphereToken",
+            "src": "contracts\\SphereToken.sol:64"
+          },
+          {
+            "label": "goDeflationary",
+            "offset": 9,
+            "slot": "159",
+            "type": "t_bool",
+            "contract": "SphereToken",
+            "src": "contracts\\SphereToken.sol:65"
+          },
+          {
+            "label": "investorInfoMap",
+            "offset": 0,
+            "slot": "160",
+            "type": "t_mapping(t_address,t_struct(InvestorInfo)16925_storage)",
+            "contract": "SphereToken",
+            "src": "contracts\\SphereToken.sol:67"
+          },
+          {
+            "label": "isBuyFeeExempt",
+            "offset": 0,
+            "slot": "161",
+            "type": "t_mapping(t_address,t_bool)",
+            "contract": "SphereToken",
+            "src": "contracts\\SphereToken.sol:68"
+          },
+          {
+            "label": "isSellFeeExempt",
+            "offset": 0,
+            "slot": "162",
+            "type": "t_mapping(t_address,t_bool)",
+            "contract": "SphereToken",
+            "src": "contracts\\SphereToken.sol:69"
+          },
+          {
+            "label": "isTotalFeeExempt",
+            "offset": 0,
+            "slot": "163",
+            "type": "t_mapping(t_address,t_bool)",
+            "contract": "SphereToken",
+            "src": "contracts\\SphereToken.sol:70"
+          },
+          {
+            "label": "canRebase",
+            "offset": 0,
+            "slot": "164",
+            "type": "t_mapping(t_address,t_bool)",
+            "contract": "SphereToken",
+            "src": "contracts\\SphereToken.sol:71"
+          },
+          {
+            "label": "canSetRewardYield",
+            "offset": 0,
+            "slot": "165",
+            "type": "t_mapping(t_address,t_bool)",
+            "contract": "SphereToken",
+            "src": "contracts\\SphereToken.sol:72"
+          },
+          {
+            "label": "_disallowedToMove",
+            "offset": 0,
+            "slot": "166",
+            "type": "t_mapping(t_address,t_bool)",
+            "contract": "SphereToken",
+            "src": "contracts\\SphereToken.sol:73"
+          },
+          {
+            "label": "automatedMarketMakerPairs",
+            "offset": 0,
+            "slot": "167",
+            "type": "t_mapping(t_address,t_bool)",
+            "contract": "SphereToken",
+            "src": "contracts\\SphereToken.sol:74"
+          },
+          {
+            "label": "partyArrayCheck",
+            "offset": 0,
+            "slot": "168",
+            "type": "t_mapping(t_address,t_bool)",
+            "contract": "SphereToken",
+            "src": "contracts\\SphereToken.sol:75"
+          },
+          {
+            "label": "sphereGamesCheck",
+            "offset": 0,
+            "slot": "169",
+            "type": "t_mapping(t_address,t_bool)",
+            "contract": "SphereToken",
+            "src": "contracts\\SphereToken.sol:76"
+          },
+          {
+            "label": "subContractCheck",
+            "offset": 0,
+            "slot": "170",
+            "type": "t_mapping(t_address,t_bool)",
+            "contract": "SphereToken",
+            "src": "contracts\\SphereToken.sol:77"
+          },
+          {
+            "label": "lpContractCheck",
+            "offset": 0,
+            "slot": "171",
+            "type": "t_mapping(t_address,t_bool)",
+            "contract": "SphereToken",
+            "src": "contracts\\SphereToken.sol:78"
+          },
+          {
+            "label": "partyArrayFee",
+            "offset": 0,
+            "slot": "172",
+            "type": "t_mapping(t_address,t_uint256)",
+            "contract": "SphereToken",
+            "src": "contracts\\SphereToken.sol:79"
+          },
+          {
+            "label": "_allowedFragments",
+            "offset": 0,
+            "slot": "173",
+            "type": "t_mapping(t_address,t_mapping(t_address,t_uint256))",
+            "contract": "SphereToken",
+            "src": "contracts\\SphereToken.sol:80"
+          },
+          {
+            "label": "_gonBalances",
+            "offset": 0,
+            "slot": "174",
+            "type": "t_mapping(t_address,t_uint256)",
+            "contract": "SphereToken",
+            "src": "contracts\\SphereToken.sol:81"
+          },
+          {
+            "label": "rewardYieldDenominator",
+            "offset": 0,
+            "slot": "175",
+            "type": "t_uint256",
+            "contract": "SphereToken",
+            "src": "contracts\\SphereToken.sol:83"
+          },
+          {
+            "label": "investRemovalDelay",
+            "offset": 0,
+            "slot": "176",
+            "type": "t_uint256",
+            "contract": "SphereToken",
+            "src": "contracts\\SphereToken.sol:85"
+          },
+          {
+            "label": "partyListDivisor",
+            "offset": 0,
+            "slot": "177",
+            "type": "t_uint256",
+            "contract": "SphereToken",
+            "src": "contracts\\SphereToken.sol:86"
+          },
+          {
+            "label": "rebaseFrequency",
+            "offset": 0,
+            "slot": "178",
+            "type": "t_uint256",
+            "contract": "SphereToken",
+            "src": "contracts\\SphereToken.sol:87"
+          },
+          {
+            "label": "rewardYield",
+            "offset": 0,
+            "slot": "179",
+            "type": "t_uint256",
+            "contract": "SphereToken",
+            "src": "contracts\\SphereToken.sol:88"
+          },
+          {
+            "label": "markerPairCount",
+            "offset": 0,
+            "slot": "180",
+            "type": "t_uint256",
+            "contract": "SphereToken",
+            "src": "contracts\\SphereToken.sol:90"
+          },
+          {
+            "label": "index",
+            "offset": 0,
+            "slot": "181",
+            "type": "t_uint256",
+            "contract": "SphereToken",
+            "src": "contracts\\SphereToken.sol:91"
+          },
+          {
+            "label": "maxBuyTransactionAmount",
+            "offset": 0,
+            "slot": "182",
+            "type": "t_uint256",
+            "contract": "SphereToken",
+            "src": "contracts\\SphereToken.sol:92"
+          },
+          {
+            "label": "maxSellTransactionAmount",
+            "offset": 0,
+            "slot": "183",
+            "type": "t_uint256",
+            "contract": "SphereToken",
+            "src": "contracts\\SphereToken.sol:93"
+          },
+          {
+            "label": "nextRebase",
+            "offset": 0,
+            "slot": "184",
+            "type": "t_uint256",
+            "contract": "SphereToken",
+            "src": "contracts\\SphereToken.sol:94"
+          },
+          {
+            "label": "rebaseEpoch",
+            "offset": 0,
+            "slot": "185",
+            "type": "t_uint256",
+            "contract": "SphereToken",
+            "src": "contracts\\SphereToken.sol:95"
+          },
+          {
+            "label": "taxBracketMultiplier",
+            "offset": 0,
+            "slot": "186",
+            "type": "t_uint256",
+            "contract": "SphereToken",
+            "src": "contracts\\SphereToken.sol:96"
+          },
+          {
+            "label": "wallDivisor",
+            "offset": 0,
+            "slot": "187",
+            "type": "t_uint256",
+            "contract": "SphereToken",
+            "src": "contracts\\SphereToken.sol:97"
+          },
+          {
+            "label": "liquidityReceiver",
+            "offset": 0,
+            "slot": "188",
+            "type": "t_address",
+            "contract": "SphereToken",
+            "src": "contracts\\SphereToken.sol:99"
+          },
+          {
+            "label": "treasuryReceiver",
+            "offset": 0,
+            "slot": "189",
+            "type": "t_address",
+            "contract": "SphereToken",
+            "src": "contracts\\SphereToken.sol:100"
+          },
+          {
+            "label": "riskFreeValueReceiver",
+            "offset": 0,
+            "slot": "190",
+            "type": "t_address",
+            "contract": "SphereToken",
+            "src": "contracts\\SphereToken.sol:101"
+          },
+          {
+            "label": "galaxyBondReceiver",
+            "offset": 0,
+            "slot": "191",
+            "type": "t_address",
+            "contract": "SphereToken",
+            "src": "contracts\\SphereToken.sol:102"
+          },
+          {
+            "label": "sphereSwapper",
+            "offset": 0,
+            "slot": "192",
+            "type": "t_address",
+            "contract": "SphereToken",
+            "src": "contracts\\SphereToken.sol:104"
+          },
+          {
+            "label": "maxInvestRemovablePerPeriod",
+            "offset": 0,
+            "slot": "193",
+            "type": "t_uint256",
+            "contract": "SphereToken",
+            "src": "contracts\\SphereToken.sol:106"
+          },
+          {
+            "label": "isGameDepositLimited",
+            "offset": 0,
+            "slot": "194",
+            "type": "t_bool",
+            "contract": "SphereToken",
+            "src": "contracts\\SphereToken.sol:110"
+          },
+          {
+            "label": "gameDepositDelay",
+            "offset": 0,
+            "slot": "195",
+            "type": "t_uint256",
+            "contract": "SphereToken",
+            "src": "contracts\\SphereToken.sol:111"
+          },
+          {
+            "label": "gameDepositMaxShare",
+            "offset": 0,
+            "slot": "196",
+            "type": "t_uint256",
+            "contract": "SphereToken",
+            "src": "contracts\\SphereToken.sol:112"
+          },
+          {
+            "label": "sphereGamePool",
+            "offset": 0,
+            "slot": "197",
+            "type": "t_address",
+            "contract": "SphereToken",
+            "src": "contracts\\SphereToken.sol:113"
+          },
+          {
+            "label": "hackerDeadLock",
+            "offset": 0,
+            "slot": "198",
+            "type": "t_mapping(t_address,t_bool)",
+            "contract": "SphereToken",
+            "src": "contracts\\SphereToken.sol:119"
+          },
+          {
+            "label": "multisig",
+            "offset": 0,
+            "slot": "199",
+            "type": "t_address",
+            "contract": "SphereToken",
+            "src": "contracts\\SphereToken.sol:120"
+          },
+          {
+            "label": "isTransferFeeExempt",
+            "offset": 0,
+            "slot": "200",
+            "type": "t_mapping(t_address,t_bool)",
+            "contract": "SphereToken",
+            "src": "contracts\\SphereToken.sol:121"
+          },
+          {
+            "label": "previousTreasuryBalance",
+            "offset": 0,
+            "slot": "201",
+            "type": "t_uint256",
+            "contract": "SphereToken",
+            "src": "contracts\\SphereToken.sol:123"
+          }
+        ],
+        "types": {
+          "t_address": {
+            "label": "address",
+            "numberOfBytes": "20"
+          },
+          "t_array(t_address)dyn_storage": {
+            "label": "address[]",
+            "numberOfBytes": "32"
+          },
+          "t_array(t_struct(GameDeposit)16914_storage)dyn_storage": {
+            "label": "struct ISphereToken.GameDeposit[]",
+            "numberOfBytes": "32"
+          },
+          "t_array(t_struct(Withdrawal)16909_storage)dyn_storage": {
+            "label": "struct ISphereToken.Withdrawal[]",
+            "numberOfBytes": "32"
+          },
+          "t_array(t_uint256)45_storage": {
+            "label": "uint256[45]",
+            "numberOfBytes": "1440"
+          },
+          "t_array(t_uint256)49_storage": {
+            "label": "uint256[49]",
+            "numberOfBytes": "1568"
+          },
+          "t_array(t_uint256)50_storage": {
+            "label": "uint256[50]",
+            "numberOfBytes": "1600"
+          },
+          "t_bool": {
+            "label": "bool",
+            "numberOfBytes": "1"
+          },
+          "t_contract(ISphereSettings)16902": {
+            "label": "contract ISphereSettings",
+            "numberOfBytes": "20"
+          },
+          "t_mapping(t_address,t_bool)": {
+            "label": "mapping(address => bool)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_address,t_mapping(t_address,t_uint256))": {
+            "label": "mapping(address => mapping(address => uint256))",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_address,t_struct(InvestorInfo)16925_storage)": {
+            "label": "mapping(address => struct ISphereToken.InvestorInfo)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_address,t_uint256)": {
+            "label": "mapping(address => uint256)",
+            "numberOfBytes": "32"
+          },
+          "t_string_storage": {
+            "label": "string",
+            "numberOfBytes": "32"
+          },
+          "t_struct(GameDeposit)16914_storage": {
+            "label": "struct ISphereToken.GameDeposit",
+            "members": [
+              {
+                "label": "timestamp",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "depositAmount",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "1"
+              }
+            ],
+            "numberOfBytes": "64"
+          },
+          "t_struct(InvestorInfo)16925_storage": {
+            "label": "struct ISphereToken.InvestorInfo",
+            "members": [
+              {
+                "label": "totalInvestableExchanged",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "withdrawHistory",
+                "type": "t_array(t_struct(Withdrawal)16909_storage)dyn_storage",
+                "offset": 0,
+                "slot": "1"
+              },
+              {
+                "label": "gameDepositHistory",
+                "type": "t_array(t_struct(GameDeposit)16914_storage)dyn_storage",
+                "offset": 0,
+                "slot": "2"
+              }
+            ],
+            "numberOfBytes": "96"
+          },
+          "t_struct(Withdrawal)16909_storage": {
+            "label": "struct ISphereToken.Withdrawal",
+            "members": [
+              {
+                "label": "timestamp",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "withdrawAmount",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "1"
+              }
+            ],
+            "numberOfBytes": "64"
+          },
+          "t_uint256": {
+            "label": "uint256",
+            "numberOfBytes": "32"
+          },
+          "t_uint8": {
+            "label": "uint8",
+            "numberOfBytes": "1"
+          }
+        }
+      }
+    },
+    "634207e2e80a0975bd527648e40477be42d630006e922098c042d1db73d7a726": {
+      "address": "0xED58C8e76d567B7492D4Db2374dF12F5913f7CA7",
+      "txHash": "0x592339dd4541ef7bbf0e01ea345998d33bd75080867a063d3d83a6b50f418fbc",
+      "layout": {
+        "storage": [
+          {
+            "label": "_initialized",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_uint8",
+            "contract": "Initializable",
+            "src": "@openzeppelin\\contracts-upgradeable\\proxy\\utils\\Initializable.sol:62",
+            "retypedFrom": "bool"
+          },
+          {
+            "label": "_initializing",
+            "offset": 1,
+            "slot": "0",
+            "type": "t_bool",
+            "contract": "Initializable",
+            "src": "@openzeppelin\\contracts-upgradeable\\proxy\\utils\\Initializable.sol:67"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_array(t_uint256)50_storage",
+            "contract": "ContextUpgradeable",
+            "src": "@openzeppelin\\contracts-upgradeable\\utils\\ContextUpgradeable.sol:36"
+          },
+          {
+            "label": "_balances",
+            "offset": 0,
+            "slot": "51",
+            "type": "t_mapping(t_address,t_uint256)",
+            "contract": "ERC20Upgradeable",
+            "src": "@openzeppelin\\contracts-upgradeable\\token\\ERC20\\ERC20Upgradeable.sol:37"
+          },
+          {
+            "label": "_allowances",
+            "offset": 0,
+            "slot": "52",
+            "type": "t_mapping(t_address,t_mapping(t_address,t_uint256))",
+            "contract": "ERC20Upgradeable",
+            "src": "@openzeppelin\\contracts-upgradeable\\token\\ERC20\\ERC20Upgradeable.sol:39"
+          },
+          {
+            "label": "_totalSupply",
+            "offset": 0,
+            "slot": "53",
+            "type": "t_uint256",
+            "contract": "ERC20Upgradeable",
+            "src": "@openzeppelin\\contracts-upgradeable\\token\\ERC20\\ERC20Upgradeable.sol:41"
+          },
+          {
+            "label": "_name",
+            "offset": 0,
+            "slot": "54",
+            "type": "t_string_storage",
+            "contract": "ERC20Upgradeable",
+            "src": "@openzeppelin\\contracts-upgradeable\\token\\ERC20\\ERC20Upgradeable.sol:43"
+          },
+          {
+            "label": "_symbol",
+            "offset": 0,
+            "slot": "55",
+            "type": "t_string_storage",
+            "contract": "ERC20Upgradeable",
+            "src": "@openzeppelin\\contracts-upgradeable\\token\\ERC20\\ERC20Upgradeable.sol:44"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "56",
+            "type": "t_array(t_uint256)45_storage",
+            "contract": "ERC20Upgradeable",
+            "src": "@openzeppelin\\contracts-upgradeable\\token\\ERC20\\ERC20Upgradeable.sol:394"
+          },
+          {
+            "label": "_owner",
+            "offset": 0,
+            "slot": "101",
+            "type": "t_address",
+            "contract": "OwnableUpgradeable",
+            "src": "@openzeppelin\\contracts-upgradeable\\access\\OwnableUpgradeable.sol:22"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "102",
+            "type": "t_array(t_uint256)49_storage",
+            "contract": "OwnableUpgradeable",
+            "src": "@openzeppelin\\contracts-upgradeable\\access\\OwnableUpgradeable.sol:87"
+          },
+          {
+            "label": "settings",
+            "offset": 0,
+            "slot": "151",
+            "type": "t_contract(ISphereSettings)16042",
+            "contract": "SphereToken",
+            "src": "contracts\\SphereToken.sol:42"
+          },
+          {
+            "label": "initialDistributionFinished",
+            "offset": 20,
+            "slot": "151",
+            "type": "t_bool",
+            "contract": "SphereToken",
+            "src": "contracts\\SphereToken.sol:43"
+          },
+          {
+            "label": "inSwap",
+            "offset": 21,
+            "slot": "151",
+            "type": "t_bool",
+            "contract": "SphereToken",
+            "src": "contracts\\SphereToken.sol:44"
+          },
+          {
+            "label": "_totalSupply",
+            "offset": 0,
+            "slot": "152",
+            "type": "t_uint256",
+            "contract": "SphereToken",
+            "src": "contracts\\SphereToken.sol:45"
+          },
+          {
+            "label": "gonsPerFragment",
+            "offset": 0,
+            "slot": "153",
+            "type": "t_uint256",
+            "contract": "SphereToken",
+            "src": "contracts\\SphereToken.sol:46"
+          },
+          {
+            "label": "makerPairs",
+            "offset": 0,
+            "slot": "154",
+            "type": "t_array(t_address)dyn_storage",
+            "contract": "SphereToken",
+            "src": "contracts\\SphereToken.sol:50"
+          },
+          {
+            "label": "partyArray",
+            "offset": 0,
+            "slot": "155",
+            "type": "t_array(t_address)dyn_storage",
+            "contract": "SphereToken",
+            "src": "contracts\\SphereToken.sol:51"
+          },
+          {
+            "label": "sphereGamesContracts",
+            "offset": 0,
+            "slot": "156",
+            "type": "t_array(t_address)dyn_storage",
+            "contract": "SphereToken",
+            "src": "contracts\\SphereToken.sol:52"
+          },
+          {
+            "label": "subContracts",
+            "offset": 0,
+            "slot": "157",
+            "type": "t_array(t_address)dyn_storage",
+            "contract": "SphereToken",
+            "src": "contracts\\SphereToken.sol:53"
+          },
+          {
+            "label": "lpContracts",
+            "offset": 0,
+            "slot": "158",
+            "type": "t_array(t_address)dyn_storage",
+            "contract": "SphereToken",
+            "src": "contracts\\SphereToken.sol:54"
+          },
+          {
+            "label": "feesOnNormalTransfers",
+            "offset": 0,
+            "slot": "159",
+            "type": "t_bool",
+            "contract": "SphereToken",
+            "src": "contracts\\SphereToken.sol:56"
+          },
+          {
+            "label": "autoRebase",
+            "offset": 1,
+            "slot": "159",
+            "type": "t_bool",
+            "contract": "SphereToken",
+            "src": "contracts\\SphereToken.sol:58"
+          },
+          {
+            "label": "isLiquidityEnabled",
+            "offset": 2,
+            "slot": "159",
+            "type": "t_bool",
+            "contract": "SphereToken",
+            "src": "contracts\\SphereToken.sol:60"
+          },
+          {
+            "label": "isMoveBalance",
+            "offset": 3,
+            "slot": "159",
+            "type": "t_bool",
+            "contract": "SphereToken",
+            "src": "contracts\\SphereToken.sol:61"
+          },
+          {
+            "label": "isSellHourlyLimit",
+            "offset": 4,
+            "slot": "159",
+            "type": "t_bool",
+            "contract": "SphereToken",
+            "src": "contracts\\SphereToken.sol:62"
+          },
+          {
+            "label": "isTaxBracket",
+            "offset": 5,
+            "slot": "159",
+            "type": "t_bool",
+            "contract": "SphereToken",
+            "src": "contracts\\SphereToken.sol:63"
+          },
+          {
+            "label": "isWall",
+            "offset": 6,
+            "slot": "159",
+            "type": "t_bool",
+            "contract": "SphereToken",
+            "src": "contracts\\SphereToken.sol:64"
+          },
+          {
+            "label": "partyTime",
+            "offset": 7,
+            "slot": "159",
+            "type": "t_bool",
+            "contract": "SphereToken",
+            "src": "contracts\\SphereToken.sol:65"
+          },
+          {
+            "label": "swapEnabled",
+            "offset": 8,
+            "slot": "159",
+            "type": "t_bool",
+            "contract": "SphereToken",
+            "src": "contracts\\SphereToken.sol:66"
+          },
+          {
+            "label": "goDeflationary",
+            "offset": 9,
+            "slot": "159",
+            "type": "t_bool",
+            "contract": "SphereToken",
+            "src": "contracts\\SphereToken.sol:67"
+          },
+          {
+            "label": "investorInfoMap",
+            "offset": 0,
+            "slot": "160",
+            "type": "t_mapping(t_address,t_struct(InvestorInfo)16065_storage)",
+            "contract": "SphereToken",
+            "src": "contracts\\SphereToken.sol:69"
+          },
+          {
+            "label": "isBuyFeeExempt",
+            "offset": 0,
+            "slot": "161",
+            "type": "t_mapping(t_address,t_bool)",
+            "contract": "SphereToken",
+            "src": "contracts\\SphereToken.sol:70"
+          },
+          {
+            "label": "isSellFeeExempt",
+            "offset": 0,
+            "slot": "162",
+            "type": "t_mapping(t_address,t_bool)",
+            "contract": "SphereToken",
+            "src": "contracts\\SphereToken.sol:71"
+          },
+          {
+            "label": "isTotalFeeExempt",
+            "offset": 0,
+            "slot": "163",
+            "type": "t_mapping(t_address,t_bool)",
+            "contract": "SphereToken",
+            "src": "contracts\\SphereToken.sol:72"
+          },
+          {
+            "label": "canRebase",
+            "offset": 0,
+            "slot": "164",
+            "type": "t_mapping(t_address,t_bool)",
+            "contract": "SphereToken",
+            "src": "contracts\\SphereToken.sol:73"
+          },
+          {
+            "label": "canSetRewardYield",
+            "offset": 0,
+            "slot": "165",
+            "type": "t_mapping(t_address,t_bool)",
+            "contract": "SphereToken",
+            "src": "contracts\\SphereToken.sol:74"
+          },
+          {
+            "label": "_disallowedToMove",
+            "offset": 0,
+            "slot": "166",
+            "type": "t_mapping(t_address,t_bool)",
+            "contract": "SphereToken",
+            "src": "contracts\\SphereToken.sol:75"
+          },
+          {
+            "label": "automatedMarketMakerPairs",
+            "offset": 0,
+            "slot": "167",
+            "type": "t_mapping(t_address,t_bool)",
+            "contract": "SphereToken",
+            "src": "contracts\\SphereToken.sol:76"
+          },
+          {
+            "label": "partyArrayCheck",
+            "offset": 0,
+            "slot": "168",
+            "type": "t_mapping(t_address,t_bool)",
+            "contract": "SphereToken",
+            "src": "contracts\\SphereToken.sol:77"
+          },
+          {
+            "label": "sphereGamesCheck",
+            "offset": 0,
+            "slot": "169",
+            "type": "t_mapping(t_address,t_bool)",
+            "contract": "SphereToken",
+            "src": "contracts\\SphereToken.sol:78"
+          },
+          {
+            "label": "subContractCheck",
+            "offset": 0,
+            "slot": "170",
+            "type": "t_mapping(t_address,t_bool)",
+            "contract": "SphereToken",
+            "src": "contracts\\SphereToken.sol:79"
+          },
+          {
+            "label": "lpContractCheck",
+            "offset": 0,
+            "slot": "171",
+            "type": "t_mapping(t_address,t_bool)",
+            "contract": "SphereToken",
+            "src": "contracts\\SphereToken.sol:80"
+          },
+          {
+            "label": "partyArrayFee",
+            "offset": 0,
+            "slot": "172",
+            "type": "t_mapping(t_address,t_uint256)",
+            "contract": "SphereToken",
+            "src": "contracts\\SphereToken.sol:81"
+          },
+          {
+            "label": "_allowedFragments",
+            "offset": 0,
+            "slot": "173",
+            "type": "t_mapping(t_address,t_mapping(t_address,t_uint256))",
+            "contract": "SphereToken",
+            "src": "contracts\\SphereToken.sol:82"
+          },
+          {
+            "label": "_gonBalances",
+            "offset": 0,
+            "slot": "174",
+            "type": "t_mapping(t_address,t_uint256)",
+            "contract": "SphereToken",
+            "src": "contracts\\SphereToken.sol:83"
+          },
+          {
+            "label": "rewardYieldDenominator",
+            "offset": 0,
+            "slot": "175",
+            "type": "t_uint256",
+            "contract": "SphereToken",
+            "src": "contracts\\SphereToken.sol:85"
+          },
+          {
+            "label": "investRemovalDelay",
+            "offset": 0,
+            "slot": "176",
+            "type": "t_uint256",
+            "contract": "SphereToken",
+            "src": "contracts\\SphereToken.sol:87"
+          },
+          {
+            "label": "partyListDivisor",
+            "offset": 0,
+            "slot": "177",
+            "type": "t_uint256",
+            "contract": "SphereToken",
+            "src": "contracts\\SphereToken.sol:88"
+          },
+          {
+            "label": "rebaseFrequency",
+            "offset": 0,
+            "slot": "178",
+            "type": "t_uint256",
+            "contract": "SphereToken",
+            "src": "contracts\\SphereToken.sol:89"
+          },
+          {
+            "label": "rewardYield",
+            "offset": 0,
+            "slot": "179",
+            "type": "t_uint256",
+            "contract": "SphereToken",
+            "src": "contracts\\SphereToken.sol:90"
+          },
+          {
+            "label": "markerPairCount",
+            "offset": 0,
+            "slot": "180",
+            "type": "t_uint256",
+            "contract": "SphereToken",
+            "src": "contracts\\SphereToken.sol:92"
+          },
+          {
+            "label": "index",
+            "offset": 0,
+            "slot": "181",
+            "type": "t_uint256",
+            "contract": "SphereToken",
+            "src": "contracts\\SphereToken.sol:93"
+          },
+          {
+            "label": "maxBuyTransactionAmount",
+            "offset": 0,
+            "slot": "182",
+            "type": "t_uint256",
+            "contract": "SphereToken",
+            "src": "contracts\\SphereToken.sol:94"
+          },
+          {
+            "label": "maxSellTransactionAmount",
+            "offset": 0,
+            "slot": "183",
+            "type": "t_uint256",
+            "contract": "SphereToken",
+            "src": "contracts\\SphereToken.sol:95"
+          },
+          {
+            "label": "nextRebase",
+            "offset": 0,
+            "slot": "184",
+            "type": "t_uint256",
+            "contract": "SphereToken",
+            "src": "contracts\\SphereToken.sol:96"
+          },
+          {
+            "label": "rebaseEpoch",
+            "offset": 0,
+            "slot": "185",
+            "type": "t_uint256",
+            "contract": "SphereToken",
+            "src": "contracts\\SphereToken.sol:97"
+          },
+          {
+            "label": "taxBracketMultiplier",
+            "offset": 0,
+            "slot": "186",
+            "type": "t_uint256",
+            "contract": "SphereToken",
+            "src": "contracts\\SphereToken.sol:98"
+          },
+          {
+            "label": "wallDivisor",
+            "offset": 0,
+            "slot": "187",
+            "type": "t_uint256",
+            "contract": "SphereToken",
+            "src": "contracts\\SphereToken.sol:99"
+          },
+          {
+            "label": "liquidityReceiver",
+            "offset": 0,
+            "slot": "188",
+            "type": "t_address",
+            "contract": "SphereToken",
+            "src": "contracts\\SphereToken.sol:101"
+          },
+          {
+            "label": "treasuryReceiver",
+            "offset": 0,
+            "slot": "189",
+            "type": "t_address",
+            "contract": "SphereToken",
+            "src": "contracts\\SphereToken.sol:102"
+          },
+          {
+            "label": "riskFreeValueReceiver",
+            "offset": 0,
+            "slot": "190",
+            "type": "t_address",
+            "contract": "SphereToken",
+            "src": "contracts\\SphereToken.sol:103"
+          },
+          {
+            "label": "galaxyBondReceiver",
+            "offset": 0,
+            "slot": "191",
+            "type": "t_address",
+            "contract": "SphereToken",
+            "src": "contracts\\SphereToken.sol:104"
+          },
+          {
+            "label": "sphereSwapper",
+            "offset": 0,
+            "slot": "192",
+            "type": "t_address",
+            "contract": "SphereToken",
+            "src": "contracts\\SphereToken.sol:106"
+          },
+          {
+            "label": "maxInvestRemovablePerPeriod",
+            "offset": 0,
+            "slot": "193",
+            "type": "t_uint256",
+            "contract": "SphereToken",
+            "src": "contracts\\SphereToken.sol:108"
+          },
+          {
+            "label": "isGameDepositLimited",
+            "offset": 0,
+            "slot": "194",
+            "type": "t_bool",
+            "contract": "SphereToken",
+            "src": "contracts\\SphereToken.sol:112"
+          },
+          {
+            "label": "gameDepositDelay",
+            "offset": 0,
+            "slot": "195",
+            "type": "t_uint256",
+            "contract": "SphereToken",
+            "src": "contracts\\SphereToken.sol:113"
+          },
+          {
+            "label": "gameDepositMaxShare",
+            "offset": 0,
+            "slot": "196",
+            "type": "t_uint256",
+            "contract": "SphereToken",
+            "src": "contracts\\SphereToken.sol:114"
+          },
+          {
+            "label": "sphereGamePool",
+            "offset": 0,
+            "slot": "197",
+            "type": "t_address",
+            "contract": "SphereToken",
+            "src": "contracts\\SphereToken.sol:115"
+          },
+          {
+            "label": "hackerDeadLock",
+            "offset": 0,
+            "slot": "198",
+            "type": "t_mapping(t_address,t_bool)",
+            "contract": "SphereToken",
+            "src": "contracts\\SphereToken.sol:121"
+          },
+          {
+            "label": "multisig",
+            "offset": 0,
+            "slot": "199",
+            "type": "t_address",
+            "contract": "SphereToken",
+            "src": "contracts\\SphereToken.sol:122"
+          },
+          {
+            "label": "isTransferFeeExempt",
+            "offset": 0,
+            "slot": "200",
+            "type": "t_mapping(t_address,t_bool)",
+            "contract": "SphereToken",
+            "src": "contracts\\SphereToken.sol:123"
+          },
+          {
+            "label": "previousTreasuryBalance",
+            "offset": 0,
+            "slot": "201",
+            "type": "t_uint256",
+            "contract": "SphereToken",
+            "src": "contracts\\SphereToken.sol:125"
+          }
+        ],
+        "types": {
+          "t_address": {
+            "label": "address",
+            "numberOfBytes": "20"
+          },
+          "t_array(t_address)dyn_storage": {
+            "label": "address[]",
+            "numberOfBytes": "32"
+          },
+          "t_array(t_struct(GameDeposit)16054_storage)dyn_storage": {
+            "label": "struct ISphereToken.GameDeposit[]",
+            "numberOfBytes": "32"
+          },
+          "t_array(t_struct(Withdrawal)16049_storage)dyn_storage": {
+            "label": "struct ISphereToken.Withdrawal[]",
+            "numberOfBytes": "32"
+          },
+          "t_array(t_uint256)45_storage": {
+            "label": "uint256[45]",
+            "numberOfBytes": "1440"
+          },
+          "t_array(t_uint256)49_storage": {
+            "label": "uint256[49]",
+            "numberOfBytes": "1568"
+          },
+          "t_array(t_uint256)50_storage": {
+            "label": "uint256[50]",
+            "numberOfBytes": "1600"
+          },
+          "t_bool": {
+            "label": "bool",
+            "numberOfBytes": "1"
+          },
+          "t_contract(ISphereSettings)16042": {
+            "label": "contract ISphereSettings",
+            "numberOfBytes": "20"
+          },
+          "t_mapping(t_address,t_bool)": {
+            "label": "mapping(address => bool)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_address,t_mapping(t_address,t_uint256))": {
+            "label": "mapping(address => mapping(address => uint256))",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_address,t_struct(InvestorInfo)16065_storage)": {
+            "label": "mapping(address => struct ISphereToken.InvestorInfo)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_address,t_uint256)": {
+            "label": "mapping(address => uint256)",
+            "numberOfBytes": "32"
+          },
+          "t_string_storage": {
+            "label": "string",
+            "numberOfBytes": "32"
+          },
+          "t_struct(GameDeposit)16054_storage": {
+            "label": "struct ISphereToken.GameDeposit",
+            "members": [
+              {
+                "label": "timestamp",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "depositAmount",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "1"
+              }
+            ],
+            "numberOfBytes": "64"
+          },
+          "t_struct(InvestorInfo)16065_storage": {
+            "label": "struct ISphereToken.InvestorInfo",
+            "members": [
+              {
+                "label": "totalInvestableExchanged",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "withdrawHistory",
+                "type": "t_array(t_struct(Withdrawal)16049_storage)dyn_storage",
+                "offset": 0,
+                "slot": "1"
+              },
+              {
+                "label": "gameDepositHistory",
+                "type": "t_array(t_struct(GameDeposit)16054_storage)dyn_storage",
+                "offset": 0,
+                "slot": "2"
+              }
+            ],
+            "numberOfBytes": "96"
+          },
+          "t_struct(Withdrawal)16049_storage": {
+            "label": "struct ISphereToken.Withdrawal",
+            "members": [
+              {
+                "label": "timestamp",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "withdrawAmount",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "1"
+              }
+            ],
+            "numberOfBytes": "64"
+          },
+          "t_uint256": {
+            "label": "uint256",
+            "numberOfBytes": "32"
+          },
+          "t_uint8": {
+            "label": "uint8",
+            "numberOfBytes": "1"
+          }
+        }
+      }
+    }
+  }
+}
